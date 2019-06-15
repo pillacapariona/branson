@@ -1,0 +1,14 @@
+.bg-red-brason {
+    background-color: #D5282C;
+}
+
+.bg-blue-brason {
+    background-color: #00ABF9;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center center;
+    /* width: 100%; */
+    /* height: 100%; */
+}
