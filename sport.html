@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-primary text-white text-center py-2 font-weight-medium">
+        <a href="" class="text-white px-4"><i class="fa fa-file-text-o" aria-hidden="true"></i> Facturas electronicas</a>
+        <a href="" class="text-white px-4"><i class="fa fa-paper-plane" aria-hidden="true"></i> Mis pedidos</a>
+        <a href="" class="text-white px-4"><i class="fa fa-map-marker" aria-hidden="true"></i> Conoce nuestras tiendas</a>
+        <a href="" class="text-white px-4"><i class="fa fa-phone-square" aria-hidden="true"></i> Llámanos (01) 555-5555</a>
+        <a href="" class="text-white px-4"><i class="fa fa-whatsapp" aria-hidden="true"></i> 999 999 999</a>
+        <a href="" class="text-white px-4"><i class="fa fa-check-square-o" aria-hidden="true"></i> Suscribete a nuestro boletín</a>
+        <a href="" class="text-white px-4"><i class="fa fa-envelope" aria-hidden="true"></i> servicioalcliente@bransonsport.com</a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Navbar <i class="fa fa-address-book" aria-hidden="true"></i></a>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">
+                    Launch demo modal
+                </button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- general body -->
+
+    <div class="container-fluid p-0">
+        <img class="w-100" src="./src/images/hero-sport.jpg" alt="">
+    </div>
+    <div class="container-fluid bg-dark py-5" style="background-image: url('./src/images/bg_productos.jpg')">
+        <div class="row">
+            <div class="col-3">
+                <div class="bg-danger text-white text-left font-weight-bold font-italic">
+                    <h3 class="p-3">Tus filtros</h3>
+                </div>
+
+                <div class="text-white p-4">
+                    <p class="h3"><i class="fa fa-times-circle" aria-hidden="true"></i> Codo</p>
+                    <p class="h3"><i class="fa fa-times-circle" aria-hidden="true"></i> Codo</p>
+                    <p class="h3"><i class="fa fa-times-circle" aria-hidden="true"></i> Codo</p>
+                    <p class="h3"><i class="fa fa-times-circle" aria-hidden="true"></i> Codo</p>
+                </div>
+
+                <div class="bg-danger text-white text-left font-weight-bold font-italic">
+                    <h3 class="p-3">Precio</h3>
+                </div>
+                <p>
+                    <label for="amount">Price range:</label>
+                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                </p>
+                
+                <div id="slider-range"></div>
+                
+                <label for="customRange1">Example range</label>
+                <input type="range" class="custom-range" id="customRange1" data-toggle="tooltip" data-placement="top" title="Vista previa"> 
+
+
+                <div class="dropdown pb-2">
+                    <a class="btn btn-danger btn-block font-italic text-left font-weight-bold text-white" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                        <h3>
+                            <span class="text-right">Productos</span> 
+                            <i class="fa fa-caret-down text-left" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1" >
+                        <div class="card card-body text-white font-weight-book" style="background: transparent">
+                            <div class="custom-control custom-checkbox h4">
+                                <input type="checkbox" class="custom-control-input" id="product_1">
+                                <label class="custom-control-label" for="product_1">Codo</label>
+                            </div>
+                            <div class="custom-control custom-checkbox h4">
+                                <input type="checkbox" class="custom-control-input" id="product_2">
+                                <label class="custom-control-label" for="product_2">Cuello</label>
+                            </div>
+                            <div class="custom-control custom-checkbox h4">
+                                <input type="checkbox" class="custom-control-input" id="product_3">
+                                <label class="custom-control-label" for="product_3">Cuerpo entero</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-danger text-white text-left font-weight-bold font-italic">
+                    <h3 class="p-3">Talla</h3>
+                </div>
+                <div class="text-center pt-4 pb-5">
+                    <button type="button" class="btn btn-outline-dark text-white border border-white px-4 py-3 rounded-0 mx-1"><h3 class="m-0">S</h3></button>
+                    <button type="button" class="btn btn-outline-dark text-white border border-white px-4 py-3 rounded-0 mx-1"><h3 class="m-0">M</h3></button>
+                    <button type="button" class="btn btn-outline-dark text-white border border-white px-4 py-3 rounded-0 mx-1"><h3 class="m-0">L</h3></button>
+                    <button type="button" class="btn btn-outline-dark text-white border border-white px-4 py-3 rounded-0 mx-1"><h3 class="m-0">XL</h3></button>
+                    <button type="button" class="btn btn-outline-dark text-white border border-white px-4 py-3 rounded-0 mx-1"><h3 class="m-0">XXL</h3></button>
+                </div>
+                <div class="bg-danger text-white text-left font-weight-bold font-italic">
+                    <h3 class="p-3">Color</h3>
+                </div>
+
+                <div class="text-center pt-4 pb-5">
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-primary border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-seconday border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-success border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-danger border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-warning border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-info border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-light border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-dark border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-primary border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-seconday border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-success border border-white rounded-0 p-4 mx-1"></button>
+                    <button type="button" class="btn btn-outline-dark text-white mb-3 bg-danger border border-white rounded-0 p-4 mx-1"></button>
+                </div>
+            </div>
+            <div class="col text-white">
+                <div class="d-flex justify-content-between">
+                    <div class="icons">
+                        <a href="" class="h2 mr-2"><i class="fa fa-th" aria-hidden="true"></i></a>
+                        <a href="" class="h2 mr-2"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+                    </div>
+                    <select class="custom-select custom-select-lg w-50 text-white mb-3" style="background-color: transparent">
+                        <option selected>Ordenar por</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div> 
+
+                <div class="row">
+                    <div class="col p-4 text-center text-white">
+                        <div id="producto" class="card producto text-white border-0">
+                            <img class="card-img" src="./src/images/WhatsApp Image 2019-06-12 at 10.32.01 PM.jpeg" alt="Card image">
+                            <div class="card-img-overlay card-img-overlay-1 bg-dark-opacity p-4">
+                                <div class="border border-white w-100 h-100 p-3 text-left">
+                                    <h4 class="card-title d-flex justify-content-between">
+                                        <span>Precio reducido</span>
+                                        <span class="text-danger text-underline">-10%</span>
+                                    </h4>							
+                                    <h3 class="text-success">NUEVO</h3>
+                                </div>
+                            </div>
+                            <div class="card-img-overlay card-img-overlay-2 p-4">
+                                <div class="border border-white w-100 h-100 p-3 text-left d-flex align-items-end justify-content-center">
+                                    <div class="card-title text-center">
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="En fav">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="Compartir">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-5 font-weight-book">
+                            <h3>Nombre del producto</h3>
+                            <h2>S/. 100.00</h2>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+                                        <h5 class="p-0 m-0">
+                                            <i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+                                        </h5>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+                                        <h5 class="p-0 m-0">
+                                            <i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+                                        </h5>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-4 text-center text-white">
+                        <div id="producto" class="card producto text-white border-0">
+                            <img class="card-img" src="./src/images/WhatsApp Image 2019-06-12 at 10.32.01 PM.jpeg" alt="Card image">
+                            <div class="card-img-overlay card-img-overlay-1 bg-dark-opacity p-4">
+                                <div class="border border-white w-100 h-100 p-3 text-left">
+                                    <h4 class="card-title d-flex justify-content-between">
+                                        <span>Precio reducido</span>
+                                        <span class="text-danger text-underline">-10%</span>
+                                    </h4>							
+                                    <h3 class="text-success">NUEVO</h3>
+                                </div>
+                            </div>
+                            <div class="card-img-overlay card-img-overlay-2 p-4">
+                                <div class="border border-white w-100 h-100 p-3 text-left d-flex align-items-end justify-content-center">
+                                    <div class="card-title text-center">
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="En fav">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="Compartir">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-5 font-weight-book">
+                            <h3>Nombre del producto</h3>
+                            <h2>S/. 100.00</h2>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+                                        <h5 class="p-0 m-0">
+                                            <i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+                                        </h5>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+                                        <h5 class="p-0 m-0">
+                                            <i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+                                        </h5>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-4 text-center text-white">
+                        <div id="producto" class="card producto text-white border-0">
+                            <img class="card-img" src="./src/images/WhatsApp Image 2019-06-12 at 10.32.01 PM.jpeg" alt="Card image">
+                            <div class="card-img-overlay card-img-overlay-1 bg-dark-opacity p-4">
+                                <div class="border border-white w-100 h-100 p-3 text-left">
+                                    <h4 class="card-title d-flex justify-content-between">
+                                        <span>Precio reducido</span>
+                                        <span class="text-danger text-underline">-10%</span>
+                                    </h4>							
+                                    <h3 class="text-success">NUEVO</h3>
+                                </div>
+                            </div>
+                            <div class="card-img-overlay card-img-overlay-2 p-4">
+                                <div class="border border-white w-100 h-100 p-3 text-left d-flex align-items-end justify-content-center">
+                                    <div class="card-title text-center">
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="En fav">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="Compartir">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-5 font-weight-book">
+                            <h3>Nombre del producto</h3>
+                            <h2>S/. 100.00</h2>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+                                        <h5 class="p-0 m-0">
+                                            <i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+                                        </h5>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+                                        <h5 class="p-0 m-0">
+                                            <i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+                                        </h5>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid bg-primary p-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-white font-italic font-weight-bold" style="font-size: 5rem">¡Boletín <span class="font-weight-light">promocional!</span></h1>
+                <h3 class="text-black font-weight-book">Sé el primero en recibir todas las ofertas y promociones</h3>
+            </div>
+            <div class="col">
+                <form class="form-inline">		
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                    </div>
+                
+                    <div class="form-check mb-2 mr-sm-2">
+                        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                        <label class="form-check-label" for="inlineFormCheck">
+                            Remember me
+                        </label>
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-5" style="background-color: #4c4c4c">
+        <div class="row text-center text-white font-weight-book">
+            <div class="col pb-4 pt-4">
+                <i class="fa fa-map-marker" style="font-size: 5rem" aria-hidden="true"></i>
+                <h2 class="pt-3">Devoluciones</h2>
+                <h4>No satisfecho con tu producto. Tu devolución será muy sencilla.</h4>
+            </div>
+            <div class="col pb-4 pt-4">
+                <i class="fa fa-map-marker" style="font-size: 5rem" aria-hidden="true"></i>
+                <h2 class="pt-3">Tiendas</h2>
+                <h4>Cada vez estamos más cerca de ti. Mira todas nuestras tiendas.</h4>
+            </div>
+            <div class="col pb-4 pt-4">
+                <i class="fa fa-clock-o" style="font-size: 5rem" aria-hidden="true"></i>
+                <h2 class="pt-3">Entrega</h2>
+                <h4>¡WOW! Envío gratis en menos de 48 horas laborales (Lima).</h4>
+            </div>
+            <div class="col pb-4 pt-4">
+                <i class="fa fa-question" style="font-size: 5rem" aria-hidden="true"></i>
+                <h2 class="pt-3">Centro de ayuda</h2>
+                <h4>Consejos y respuestas del Equipo Bransonsport.</h4>
+            </div>
+            <div class="col pb-4 pt-4">
+                <i class="fa fa-file-text-o" style="font-size: 5rem" aria-hidden="true"></i>
+                <h2 class="pt-3">Facturas electronicas</h2>
+                <h4>Consejos y respuestas del Equipo Bransonsport.</h4>
+            </div>
+        </div>
+    </div>
+    <footer class="text-white-50 p-5 font-weight-book" style="background-color: #333333">
+        <img class="pb-3" src="./src/images/logo_gra.jpg" alt="Branson">
+        <div class="row">
+            <div class="col pt-4">
+                <h4>Somos fabricantes y distribuidores de productos y accesorios de Medicina Deportiva con envíos diarios a todo el país.<br>En nuestro catálogo
+                    tenemos una enorme variedad de productos por los que se puede realizar un pedido a través de nuestra web y recibirlo en la comodidad de su casa.
+                </h4>
+            </div>
+            <div class="col pt-4">
+                <h2 class="pb-4">Categoria</h2>
+                <h4><a href="" class="text-white-50">Deluxe</a></h4>
+                <h4><a href="" class="text-white-50">Clasico</a></h4>
+                <h4><a href="" class="text-white-50">Pre operatorio</a></h4>
+                <h4><a href="" class="text-white-50">Ppos operatorio</a></h4>
+                <h4><a href="" class="text-white-50">Premium</a></h4>
+                <h4><a href="" class="text-white-50">Terapéutica</a></h4>
+
+            </div>
+            <div class="col pt-4">
+                <h2 class="pb-4">Asistencia</h2>
+                <h4><a href="" class="text-white-50">Contacta con nosotros</a></h4>
+                <h4><a href="" class="text-white-50">Preguntas frecuentes</a></h4>
+                <h4><a href="" class="text-white-50">Guía de Tallas</a></h4>
+                <h4><a href="" class="text-white-50">Envío y entrega</a></h4>
+                <h4><a href="" class="text-white-50">Seguimiento de su pedido</a></h4>
+                <h4><a href="" class="text-white-50">Métodos de Pago</a></h4>
+            </div>
+            <div class="col pt-4 text-white-50">
+                <h2>Medios de Pago</h2>
+                <p class="pt-5"></p>
+                <h2>Siguenos</h2>
+                <div class="redes-sociales d-flex flex-row bd-highlight mb-3 pt-2 text-white">
+                    <a href="" class="text-white-50 pr-5">
+                        <i style="font-size: 3rem" class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="text-white-50 pr-5">
+                        <i style="font-size: 3rem" class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="text-white-50 pr-5">	
+                        <i style="font-size: 3rem" class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid text-white-50 p-4" style="background-color:#1a1a1a">
+        <div class="clearfix">
+            <div class="float-left">
+                <div class="d-flex flex-row bd-highlight text-white-50">
+                    <a href="">
+                            <h4 class="pr-5 m-0 text-white-50"> Polìtica de Privacidad</h4>
+                    </a>	
+                    <h4 class="pr-5 m-0">Términos y Condiciones</h4>
+                    <h4 class="pr-5 m-0">Mapa del Sitio</h4>
+                    <h4 class="pr-5 m-0">2019 Bransonsport</h4>
+                </div>
+            </div>
+            <div class="float-right">
+                <div class="d-flex flex-row bd-highlight">
+                    <h4 class="m-0"><i class="fa fa-id-badge pr-2" aria-hidden="true"></i>Libro de reclamaciones</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        
+        });
+    </script>
+    <script>
+        $( function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+            }
+            });
+            $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+    </script>
+</body>
+</html>

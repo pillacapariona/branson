@@ -7,12 +7,22 @@
 	<link rel="stylesheet" href="src/css/bootstrap.css">
 	<link rel="stylesheet" href="src/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="src/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<title>Document</title>
 </head>
 <body>
 	<!-- nav -->
+	<div class="bg-primary text-white text-center py-2 font-weight-medium">
+		<a href="" class="text-white px-4"><i class="fa fa-file-text-o" aria-hidden="true"></i> Facturas electronicas</a>
+		<a href="" class="text-white px-4"><i class="fa fa-paper-plane" aria-hidden="true"></i> Mis pedidos</a>
+		<a href="" class="text-white px-4"><i class="fa fa-map-marker" aria-hidden="true"></i> Conoce nuestras tiendas</a>
+		<a href="" class="text-white px-4"><i class="fa fa-phone-square" aria-hidden="true"></i> Llámanos (01) 555-5555</a>
+		<a href="" class="text-white px-4"><i class="fa fa-whatsapp" aria-hidden="true"></i> 999 999 999</a>
+		<a href="" class="text-white px-4"><i class="fa fa-check-square-o" aria-hidden="true"></i> Suscribete a nuestro boletín</a>
+		<a href="" class="text-white px-4"><i class="fa fa-envelope" aria-hidden="true"></i> servicioalcliente@bransonsport.com</a>
+	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -32,11 +42,63 @@
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">
+					Launch demo modal
+				</button>
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
 		</div>
 	</nav>
+
+	<!-- Modal -->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content text-white" style="background-color:#00000078">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h2 class="text-center pb-5">Iniciar sesion</h2>
+					<form>
+						<div class="form-group pb-5">
+							<!-- <label for="exampleInputEmail1">Email address</label> -->
+							<input type="email" class="text-white form-control border-bottom border-top-0 border-right-0 border-left-0" 
+							id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar email">
+						</div>
+						<div class="form-group pb-3">
+							<!-- <label for="exampleInputPassword1">Password</label> -->
+							<input type="password" class="form-control border-bottom border-top-0 border-right-0 border-left-0" id="exampleInputPassword1" placeholder="Ingresar su contraseña">
+							<small id="emailHelp" class="form-text text-right pt-2"><a href="" class="text-danger">¿Olvidaste tu contraseña?</a></small>
+						</div>
+						<!-- <div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Check me out</label>
+						</div> -->
+						<button type="submit" class="btn btn-lg btn-block btn-danger"><h3>Ingresar</h3></button>
+						<h3 class="text-center pt-5 pb-3">Iniciar sesión con</h3>
+
+						<div class="row py-3 px-0">
+							<div class="col">
+								<button type="button" class="btn btn-lg btn-block btn-outline btn-link text-white border border-white rounded-0"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</button>
+							</div>
+							<div class="col">
+								<button type="button" class="btn btn-lg btn-block btn-outline btn-link text-white border border-white rounded-0"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Google</button>
+							</div>
+						</div>
+						<a href="" class="text-white">¿No tiene una cuenta?</a>
+						<button type="button" class="btn btn-lg btn-block btn-outlin btn-link text-white border border-white rounded-0"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Google</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
 	<!-- slides -->
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="height: 100%">
 		<div class="carousel-inner">
@@ -71,23 +133,23 @@
 		<div class="row" style="height: 600px">
 			<div class="col bg-image p-5" style="background-image: url('https://picsum.photos/id/367/600/400');">
 				<div class="border border-light	w-100 h-100 d-flex justify-content-center align-items-center">
-						<button type="button" class="btn btn-lg btn-danger font-italic font-weight-bold rounded-0" >
+						<button type="button" class="btn btn-lg btn-danger font-italic font-weight-bold rounded-0 border border-white" >
 							<span style="font-size: 2rem; padding: 0 8rem;">LÍNEA SPORT</span>
 						</button>
 				</div>
 			</div>
 			<div class="col bg-image p-5" style="background-image: url('https://picsum.photos/id/209/600/400');">
 				<div class="border border-light	w-100 h-100 d-flex justify-content-center align-items-center">
-						<button type="button" class="btn btn-lg btn-primary font-italic font-weight-bold rounded-0" style="font-size: 1.6rem">
+						<button type="button" class="btn btn-lg btn-primary font-italic font-weight-bold rounded-0 border border-white" style="font-size: 1.6rem">
 							<span style="font-size: 2rem; padding: 0 8rem;">LÍNEA RECOVERY</span>
 						</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid bg-dark pt-5 pb-5">
-		<h1 class="text-white">
-			<!-- black ultra bold demi medium book light thin -->
+	<div class="container-fluid bg-dark py-5" style="background-image: url('./src/images/bg_productos.jpg')">
+		<!-- <h1 class="text-white">
+			black ultra bold demi medium book light thin
 			<span class="font-weight-thin">Thin</span>
 			<span class="font-weight-light">Light</span>
 			<span class="font-weight-book">Book</span>
@@ -96,130 +158,400 @@
 			<span class="font-weight-bold">Bold</span>
 			<span class="font-weight-ultra">Ultra</span>
 			<span class="font-weight-black">Black</span>
-		</h1>
-		<h1 class="text-white font-italic font-weight-light"><span class="font-weight-bold">Productos</span> destacados</h1>
-		<div class="row">
-			<div class="col">
-				<img class="w-100" src="https://picsum.photos/id/367/300/350" alt="">
+		</h1> -->
+		<h1 class="text-white font-italic font-weight-light py-5" style="font-size: 4rem"><span class="font-weight-bold">Productos</span> destacados</h1>
+		<div class="row py-4 px-5">
+			<div class="col p-4 text-center text-white">
+				<div id="producto" class="card producto text-white border-0">
+					<img class="card-img" src="./src/images/WhatsApp Image 2019-06-12 at 10.32.01 PM.jpeg" alt="Card image">
+					<div class="card-img-overlay card-img-overlay-1 bg-dark-opacity p-4">
+						<div class="border border-white w-100 h-100 p-3 text-left">
+							<h4 class="card-title d-flex justify-content-between">
+								<span>Precio reducido</span>
+								<span class="text-danger text-underline">-10%</span>
+							</h4>							
+							<h3 class="text-success">NUEVO</h3>
+						</div>
+					</div>
+					<div class="card-img-overlay card-img-overlay-2 p-4">
+						<div class="border border-white w-100 h-100 p-3 text-left d-flex align-items-end justify-content-center">
+							<div class="card-title text-center">
+								<button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="Vista previa">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+								<button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="En fav">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+								<button type="button" class="btn btn-lg btn-dark mx-4 rounded-0" data-toggle="tooltip" data-placement="top" title="Compartir">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="pt-5 font-weight-book">
+					<h3>Nombre del producto</h3>
+					<h2>S/. 100.00</h2>
+					<div class="row pt-4">
+						<div class="col">
+							<button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+								</h5>
+							</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+								</h5>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col">
-				<img class="w-100" src="https://picsum.photos/id/367/300/350" alt="">
+			<div class="col p-4 text-center text-white">
+				<img class="w-100" src="./src/images/WhatsApp Image 2019-06-12 at 10.31.33 PM.jpeg" alt="">
+				<div class="pt-5 font-weight-book">
+					<h3>Nombre del producto</h3>
+					<h2>S/. 100.00</h2>
+					<div class="row pt-4">
+						<div class="col">
+							<button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+								</h5>
+							</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+								</h5>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col">
-				<img class="w-100" src="https://picsum.photos/id/367/300/350" alt="">
+			<div class="col p-4 text-center text-white">
+				<img class="w-100" src="./src/images/WhatsApp Image 2019-06-12 at 10.31.58 PM (1).jpeg" alt="">
+				<div class="pt-5 font-weight-book">
+					<h3>Nombre del producto</h3>
+					<h2>S/. 100.00</h2>
+					<div class="row pt-4">
+						<div class="col">
+							<button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+								</h5>
+							</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+								</h5>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col">
-				<img class="w-100" src="https://picsum.photos/id/367/300/350" alt="">
+			<div class="col p-4 text-center text-white">
+				<img class="w-100" src="./src/images/WhatsApp Image 2019-06-12 at 10.31.58 PM.jpeg" alt="">
+				<div class="pt-5 font-weight-book">
+					<h3>Nombre del producto</h3>
+					<h2>S/. 100.00</h2>
+					<div class="row pt-4">
+						<div class="col">
+							<button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+								</h5>
+							</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+								</h5>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid bg-blue-brason p-5">
-		<div class="row">
-			<div class="col">
-				<h1 class="text-white font-italic font-weight-bold">¡Boletín <span class="font-weight-light">promocional!</span></h1>
-				<p class="text-black font-weight-medium">Sé el primero en recibir...</p>
+		<div class="row py-4">
+			<div class="col p-4 text-center text-white">
+				<img class="w-100" src="./src/images/WhatsApp Image 2019-06-12 at 10.32.01 PM.jpeg" alt="">
+				<div class="pt-5 font-weight-book">
+					<h3>Nombre del producto</h3>
+					<h2>S/. 100.00</h2>
+					<div class="row pt-4">
+						<div class="col">
+							<button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+								</h5>
+							</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+								</h5>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col">
-				<div class="input-group mb-3">
-					<input type="text" class="form-control" placeholder="Lorem ipsum" aria-label="Recipient's username" aria-describedby="button-addon2">
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button" id="button-addon2">
-							<i class="fa fa-paper-plane" aria-hidden="true"></i>
-						</button>
+			<div class="col p-4 text-center text-white">
+				<img class="w-100" src="./src/images/WhatsApp Image 2019-06-12 at 10.32.01 PM.jpeg" alt="">
+				<div class="pt-5 font-weight-book">
+					<h3>Nombre del producto</h3>
+					<h2>S/. 100.00</h2>
+					<div class="row pt-4">
+						<div class="col">
+							<button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+								</h5>
+							</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+								</h5>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col p-4 text-center text-white">
+				<img class="w-100" src="./src/images/WhatsApp Image 2019-06-12 at 10.32.01 PM.jpeg" alt="">
+				<div class="pt-5 font-weight-book">
+					<h3>Nombre del producto</h3>
+					<h2>S/. 100.00</h2>
+					<div class="row pt-4">
+						<div class="col">
+							<button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+								</h5>
+							</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+								</h5>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col p-4 text-center text-white">
+				<img class="w-100" src="./src/images/WhatsApp Image 2019-06-12 at 10.32.01 PM.jpeg" alt="">
+				<div class="pt-5 font-weight-book">
+					<h3>Nombre del producto</h3>
+					<h2>S/. 100.00</h2>
+					<div class="row pt-4">
+						<div class="col">
+							<button type="button" class="btn btn-block btn-white rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-shopping-cart text-danger" aria-hidden="true"></i> Añadir a cesta
+								</h5>
+							</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-block btn-danger rounded-0 btn-lg">
+								<h5 class="p-0 m-0">
+									<i class="fa fa-credit-card" aria-hidden="true"></i> Compra ahora
+								</h5>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="container-fluid p-5" style="background-color: #4c4c4c">
-		<div class="row text-center text-white">
-			<div class="col">
-				<i class="fa fa-map-marker" style="font-size: 5rem" aria-hidden="true"></i>
-				<h3 class="pt-3">Devoluciones</h3>
-				<p>Lorem ipsum</p>
-			</div>
-			<div class="col">
-				<i class="fa fa-map-marker" style="font-size: 5rem" aria-hidden="true"></i>
-				<h3 class="pt-3">Tiendas</h3>
-				<p>Lorem ipsum</p>
-			</div>
-			<div class="col">
-				<i class="fa fa-clock-o" style="font-size: 5rem" aria-hidden="true"></i>
-				<h3 class="pt-3">Entrega</h3>
-				<p>Lorem ipsum</p>
-			</div>
-			<div class="col">
-				<i class="fa fa-question" style="font-size: 5rem" aria-hidden="true"></i>
-				<h3 class="pt-3">Centro de ayuda</h3>
-				<p>Lorem ipsum</p>
-			</div>
-			<div class="col">
-				<i class="fa fa-file-text-o" style="font-size: 5rem" aria-hidden="true"></i>
-				<h3 class="pt-3">Facturas electronicas</h3>
-				<p>Lorem ipsum</p>
+	<div class="container-fluid bg-image" style="background-image: url('https://picsum.photos/id/237/4858/2239'); height: 80vh">
+		<div class="container h-100 d-flex justify-content-center align-items-center">
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="col ">
+					<!-- d-flex justify-content-center align-items-center -->
+					<h1 class="text-danger font-weight-bold font-italic" style="font-size: 5rem">LÍNEA SPORT</h1>
+					<h1 class="text-white font-weight-medium font-italic">Prendas confortables para actividades deportivas</h1>	
+				</div>
+				<div class="col">
+					<div class="bg-dark-opacity w-100 h-100 p-5">
+						<div class="border border-light p-5">
+							<h1 class="text-white font-italic font-weight-bold text-center p-5" style="font-size:4.4rem">Oferta <span class="font-weight-light">unica</span></h1>
+							<div class="row text-white p-5">
+								<div class="col text-center">
+									<h1 class="font-weight-bold font-italic" style="font-size: 4.3rem">2</h1>
+									<h4 class="font-weight-light">Días</h4>
+								</div>
+								<div class="col text-center">
+									<h1 class="font-weight-bold font-italic" style="font-size: 4.3rem">48</h1>
+									<h4 class="font-weight-light">Horas</h4>
+								</div>
+								<div class="col text-center">
+									<h1 class="font-weight-bold font-italic" style="font-size: 4.3rem">18</h1>
+									<h4 class="font-weight-light">Min</h4>
+								</div>
+								<div class="col text-center">
+									<h1 class="font-weight-bold font-italic" style="font-size: 4.3rem">30</h1>
+									<h4 class="font-weight-light">Seg</h4>
+								</div>
+							</div>
+							<div class="row text-center p-5">
+								<div class="col">
+									<h4 class="font-weight-bold font-italic color-red-branson">S/. 112.50</h4>
+								</div>
+								<div class="col">
+									<h4 class="font-weight-bold font-italic text-white-50 text-linethrough">S/. 250.00</h4>
+								</div>
+							</div>
+							<div class="py-5">
+								<button type="button" class="btn btn-lg btn-danger font-italic font-weight-bold rounded-0 btn-block">
+									<span style="font-size: 2rem; padding: 0 8rem;">COMPRAR AHORA</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<footer class="bg-dark text-secondary p-5">
-		<h1>LOGO</h1>
+	<div class="container-fluid bg-primary p-5">
 		<div class="row">
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate obcaecati magni sint minima, ea hic sequi voluptatem accusamus fugit eum facere dignissimos veniam repellat, incidunt nobis ratione placeat. Ea, quaerat.</p>
+				<h1 class="text-white font-italic font-weight-bold" style="font-size: 5rem">¡Boletín <span class="font-weight-light">promocional!</span></h1>
+				<h3 class="text-black font-weight-book">Sé el primero en recibir todas las ofertas y promociones</h3>
 			</div>
 			<div class="col">
-				<h2>Categoria</h2>
-				<ul>
-					<li>Ca1</li>
-					<li>Ca1</li>
-					<li>Ca1</li>
-					<li>Ca1</li>
-					<li>Ca1</li>
-					<li>Ca1</li>
-				</ul>
+				<form class="form-inline">		
+					<label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+					<div class="input-group mb-2 mr-sm-2">
+						<div class="input-group-prepend">
+							<div class="input-group-text">@</div>
+						</div>
+						<input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+					</div>
+				
+					<div class="form-check mb-2 mr-sm-2">
+						<input class="form-check-input" type="checkbox" id="inlineFormCheck">
+						<label class="form-check-label" for="inlineFormCheck">
+							Remember me
+						</label>
+					</div>
+				
+					<button type="submit" class="btn btn-primary mb-2">Submit</button>
+				</form>
 			</div>
-			<div class="col">
-				<h2>Asistencia</h2>
-				<ul>
-					<li>Ca1</li>
-					<li>Ca1</li>
-					<li>Ca1</li>
-					<li>Ca1</li>
-					<li>Ca1</li>
-					<li>Ca1</li>
-				</ul>
+		</div>
+	</div>
+	<div class="container-fluid p-5" style="background-color: #4c4c4c">
+		<div class="row text-center text-white font-weight-book">
+			<div class="col pb-4 pt-4">
+				<i class="fa fa-map-marker" style="font-size: 5rem" aria-hidden="true"></i>
+				<h2 class="pt-3">Devoluciones</h2>
+				<h4>No satisfecho con tu producto. Tu devolución será muy sencilla.</h4>
 			</div>
-			<div class="col">
+			<div class="col pb-4 pt-4">
+				<i class="fa fa-map-marker" style="font-size: 5rem" aria-hidden="true"></i>
+				<h2 class="pt-3">Tiendas</h2>
+				<h4>Cada vez estamos más cerca de ti. Mira todas nuestras tiendas.</h4>
+			</div>
+			<div class="col pb-4 pt-4">
+				<i class="fa fa-clock-o" style="font-size: 5rem" aria-hidden="true"></i>
+				<h2 class="pt-3">Entrega</h2>
+				<h4>¡WOW! Envío gratis en menos de 48 horas laborales (Lima).</h4>
+			</div>
+			<div class="col pb-4 pt-4">
+				<i class="fa fa-question" style="font-size: 5rem" aria-hidden="true"></i>
+				<h2 class="pt-3">Centro de ayuda</h2>
+				<h4>Consejos y respuestas del Equipo Bransonsport.</h4>
+			</div>
+			<div class="col pb-4 pt-4">
+				<i class="fa fa-file-text-o" style="font-size: 5rem" aria-hidden="true"></i>
+				<h2 class="pt-3">Facturas electronicas</h2>
+				<h4>Consejos y respuestas del Equipo Bransonsport.</h4>
+			</div>
+		</div>
+	</div>
+	<footer class="text-white-50 p-5 font-weight-book" style="background-color: #333333">
+		<img class="pb-3" src="./src/images/logo_gra.jpg" alt="Branson">
+		<div class="row">
+			<div class="col pt-4">
+				<h4>Somos fabricantes y distribuidores de productos y accesorios de Medicina Deportiva con envíos diarios a todo el país.<br>En nuestro catálogo
+					tenemos una enorme variedad de productos por los que se puede realizar un pedido a través de nuestra web y recibirlo en la comodidad de su casa.
+				</h4>
+			</div>
+			<div class="col pt-4">
+				<h2 class="pb-4">Categoria</h2>
+				<h4><a href="" class="text-white-50">Deluxe</a></h4>
+				<h4><a href="" class="text-white-50">Clasico</a></h4>
+				<h4><a href="" class="text-white-50">Pre operatorio</a></h4>
+				<h4><a href="" class="text-white-50">Ppos operatorio</a></h4>
+				<h4><a href="" class="text-white-50">Premium</a></h4>
+				<h4><a href="" class="text-white-50">Terapéutica</a></h4>
+
+			</div>
+			<div class="col pt-4">
+				<h2 class="pb-4">Asistencia</h2>
+				<h4><a href="" class="text-white-50">Contacta con nosotros</a></h4>
+				<h4><a href="" class="text-white-50">Preguntas frecuentes</a></h4>
+				<h4><a href="" class="text-white-50">Guía de Tallas</a></h4>
+				<h4><a href="" class="text-white-50">Envío y entrega</a></h4>
+				<h4><a href="" class="text-white-50">Seguimiento de su pedido</a></h4>
+				<h4><a href="" class="text-white-50">Métodos de Pago</a></h4>
+			</div>
+			<div class="col pt-4 text-white-50">
 				<h2>Medios de Pago</h2>
 				<p class="pt-5"></p>
 				<h2>Siguenos</h2>
 				<div class="redes-sociales d-flex flex-row bd-highlight mb-3 pt-2 text-white">
-					<a href="" class="text-white pr-5">
-						<i style="font-size: 2rem" class="fa fa-facebook-square" aria-hidden="true"></i>
+					<a href="" class="text-white-50 pr-5">
+						<i style="font-size: 3rem" class="fa fa-facebook-square" aria-hidden="true"></i>
 					</a>
-					<a href="" class="text-white pr-5">
-						<i style="font-size: 2rem" class="fa fa-youtube-play" aria-hidden="true"></i>
+					<a href="" class="text-white-50 pr-5">
+						<i style="font-size: 3rem" class="fa fa-youtube-play" aria-hidden="true"></i>
 					</a>
-					<a href="" class="text-white pr-5">	
-						<i style="font-size: 2rem" class="fa fa-instagram" aria-hidden="true"></i>
+					<a href="" class="text-white-50 pr-5">	
+						<i style="font-size: 3rem" class="fa fa-instagram" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<div class="container-fluid text-white p-3" style="background-color: black">
+	<div class="container-fluid text-white-50 p-4" style="background-color:#1a1a1a">
 		<div class="clearfix">
 				<div class="float-left">
-					<span class="pr-2">Lorem</span>
-					<span class="pr-2">Lorem</span>
-					<span class="pr-2">Lorem</span>
-					<span class="pr-2">Lorem</span>
+					<div class="d-flex flex-row bd-highlight text-white-50">
+						<a href="">
+								<h4 class="pr-5 m-0 text-white-50"> Polìtica de Privacidad</h4>
+						</a>	
+						<h4 class="pr-5 m-0">Términos y Condiciones</h4>
+						<h4 class="pr-5 m-0">Mapa del Sitio</h4>
+						<h4 class="pr-5 m-0">2019 Bransonsport</h4>
+					</div>
 				</div>
 				<div class="float-right">
-						<i class="fa fa-id-badge" aria-hidden="true"></i>
-						<span> Lorem ipsum</span>
+					<div class="d-flex flex-row bd-highlight">
+						
+						<h4 class="m-0"><i class="fa fa-id-badge pr-2" aria-hidden="true"></i>Libro de reclamaciones</h4>
+					</div>
 				</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("body").tooltip({ selector: '[data-toggle=tooltip]' });
+		});
+	</script>
 </body>
+
 </html>
