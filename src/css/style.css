@@ -1027,6 +1027,9 @@ footer .footer-copyright .col-lg-4 i {
   .nav-2 .not-showing-xs {
     display: none;
   }
+  .navbar-menu {
+    top: 80px;
+  }
 }
 
 @media (min-width: 686px) {
