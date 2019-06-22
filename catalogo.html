@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catálogo</title>
+    <!-- Latest compiled and minified CSS Bootrstrap -->
+    <link rel="stylesheet" href="src/mdbootstrap/css/bootstrap.min.css">
+    <!-- MDB Bootstrap material minified CSS -->
+    <link rel="stylesheet" href="src/mdbootstrap/css/mdb.min.css">
+    <!-- Branson Styles -->
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+  <body>
+    <!--Navbar -->
+    <header>
+      <nav class="mb-1 navbar navbar-expand fixed-top fixed-top-1">
+        <section id="main-info-section" class="main-info-hidden-mobile">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="main-info-item">
+                  <a><i class="fa fa-file-text-o" aria-hidden="true"></i>Facturas electrónicas</a>
+                </div>
+                <div class="main-info-item">
+                  <a><i class="fa fa-paper-plane" aria-hidden="true"></i>Mis pedidos</a>
+                </div>
+                <div class="main-info-item">
+                  <a><i class="fa fa-map-marker" aria-hidden="true"></i>Conoce nuestras tiendas</a>
+                </div>
+                <div class="main-info-item">
+                  <a><i class="fa fa-phone-square" aria-hidden="true"></i>Llámanos (01) 555-5555</a>
+                </div>
+                <div class="main-info-item">
+                  <a><i class="fa fa-whatsapp" aria-hidden="true"></i></i>999 999 999</a>
+                </div>
+                <div class="main-info-item">
+                  <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Suscríbete a nuestro boletín</a>
+                </div>
+                <div class="main-info-item">
+                  <a><i class="fa fa-envelope" aria-hidden="true"></i>servicioalcliente@bransonsport.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="nav-2">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item navbar-button">
+                <a class="nav-link waves-effect" data-toggle="modal" data-target="#menuModal"><i class="fa fa-bars" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item not-showing-xs">
+                <a class="nav-link waves-effect">Sport</a>
+              </li>
+              <li class="nav-item not-showing-xs">
+                <a class="nav-link waves-effect">Recovery</a>
+              </li>
+            </ul>
+            <div class="logo-box logo-desktop">
+              <a href="index.html"><img class="logo" src="src/images/logo_red.jpg" alt="branson_logo"></a>
+            </div>
+            <div id="wrap">
+              <form action="">
+                <input id="search" name="search" type="text">
+                <input id="search_submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+              </form>
+            </div>
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link waves-effect d-inline-block" data-toggle="modal" data-target="#modalLoginForm">
+                  <i class="fa fa-user-o" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link waves-effect d-inline-block">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link waves-effect d-inline-block">
+                  <span class="items-number">1</span>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--/Navbar -->
+    <!-- Banner Product -->
+    <section id="banner-product"></section>
+    <!-- Filter Section -->
+    <section id="filter-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3  col-lg-3 col-md-3 col-sm-12 filter-col">
+            <div class="filter-panel-box">
+              <span class="title">Tus filtros</span>
+              <span class="clean">Borrar todo</span>
+            </div>
+            <div class="filter-body">
+              <div class="filter-item">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                <span class="detail">Brazo</span>
+              </div>
+              <div class="filter-item">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                <span class="detail">Brazo</span>
+              </div>
+            </div>
+            <div class="filter-panel-box">
+              <span class="title">Precio</span>
+            </div>
+            <div class="filter-body">
+              <div class="d-flex justify-content-center filter-slider">
+                <span class="mr-2 mt-1">Min</span>
+                <form class="range-field w-75">
+                  <input class="border-0" type="range" min="0" max="100" />
+                </form>
+                <span class="ml-2 mt-1">Max</span>
+              </div>
+            </div>
+            <div class="filter-panel-box">
+              <span class="title">Productos</span>
+            </div>
+            <div class="filter-body">
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="abdomen">
+                <label class="form-check-label" for="abdomen">Abdomen</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="brazo">
+                <label class="form-check-label" for="brazo">Brazo</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="cadera">
+                <label class="form-check-label" for="cadera">Cadera</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="codo">
+                <label class="form-check-label" for="codo">Codo</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="cuello">
+                <label class="form-check-label" for="cuello">Cuello</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="cuerpo_entero">
+                <label class="form-check-label" for="cuerpo_entero">Cuerpo entero</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="dedo">
+                <label class="form-check-label" for="dedo">Dedo</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="dorso">
+                <label class="form-check-label" for="dorso">Dorso</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="hombro">
+                <label class="form-check-label" for="hombro">Hombro</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="inguinal">
+                <label class="form-check-label" for="inguinal">Inguinal</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="menton">
+                <label class="form-check-label" for="menton">Mentón</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="muñeca">
+                <label class="form-check-label" for="muñeca">Muñeca</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="Muslera">
+                <label class="form-check-label" for="Muslera">Muslera</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="pantorrilla">
+                <label class="form-check-label" for="pantorrilla">Pantorrilla</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="pie">
+                <label class="form-check-label" for="pie">Pie</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="rodilla">
+                <label class="form-check-label" for="rodilla">Rodilla</label>
+              </div>
+              <div class="form-check products-check-form">
+                <input type="checkbox" class="form-check-input" id="tobillo">
+                <label class="form-check-label" for="tobillo">Tobillo</label>
+              </div>
+            </div>
+            <div class="filter-panel-box">
+              <span class="title">Talla</span>
+            </div>
+            <div class="filter-body text-center">
+              <button type="button" class="btn btn-primary btn-size">S</button>
+              <button type="button" class="btn btn-primary btn-size">M</button>
+              <button type="button" class="btn btn-primary btn-size">L</button>
+              <button type="button" class="btn btn-primary btn-size">XL</button>
+              <button type="button" class="btn btn-primary btn-size">XXL</button>
+            </div>
+            <div class="filter-panel-box">
+              <span class="title">Color</span>
+            </div>
+            <div class="filter-body text-center">
+              <button type="button" class="btn btn-primary btn-color btn-blue"></button>
+              <button type="button" class="btn btn-primary btn-color btn-white"></button>
+              <button type="button" class="btn btn-primary btn-color btn-grey"></button>
+              <button type="button" class="btn btn-primary btn-color btn-black"></button>
+              <button type="button" class="btn btn-primary btn-color btn-yellow"></button>
+              <button type="button" class="btn btn-primary btn-color btn-green"></button>
+              <button type="button" class="btn btn-primary btn-color btn-purple"></button>
+              <button type="button" class="btn btn-primary btn-color btn-orange"></button>
+              <button type="button" class="btn btn-primary btn-color btn-pink"></button>
+              <button type="button" class="btn btn-primary btn-color btn-red"></button>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 imgs-col">
+            <div class="row grid-icons">
+              <i class="fa fa-th-list" aria-hidden="true"></i>
+              <i class="fa fa-th" aria-hidden="true"></i>
+              <div class="btn-group dropdown">
+                <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Ordenar por
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item">Action</a>
+                  <a class="dropdown-item">Another action</a>
+                  <a class="dropdown-item">Something else here</a>
+                </div>
+              </div>
+            </div>
+            <div class="row img-filter-products" id="general-products">
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-12 product-card">
+                <div class="image-box">
+                  <div class="content text-center">
+                    <div class="extra-info text-left">
+                      <div>
+                        <span class="detail">Precio reducido</span>
+                        <span class="disccount">-10%</span>
+                      </div>
+                      <span class="state">nuevo</span>
+                    </div>
+                    <div class="btns-box">
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                      <a class="img-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                          <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-box text-center">
+                  <span class="name">Nombre del producto</span>
+                  <span class="price current-price">S/. 90.00</span>
+                  <span class="price prev-price">S/. 100.00</span>
+                </div>
+                <div class="purchase-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          Añadir a cesta
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a>
+                        <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          Comprar ahora
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <button type="button" class="btn btn-primary btn-load waves-effect">
+                Cargar más
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mail Section -->
+    <section id="mail-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>¡Boletín <span class="font-thin">promocional!</span></h2>
+            <h4>Sé el primero en recibir todas las ofertas y promociones</h4>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-lg">
+              <input class="form-control form-control-lg" type="text" placeholder="Déjanos tu correo">
+              <button type="button" class="btn"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+            <div class="form-check">
+              <div class="bg-check"></div>
+              <input type="checkbox" class="form-check-input" id="materialUnchecked">
+              <label class="form-check-label" for="materialUnchecked">He leído y acepto la Política de Privacidad</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mail section -->
+    <!-- features section -->
+    <section id="features-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="feature-card">
+              <i class="fa fa-retweet" aria-hidden="true"></i>
+              <h4 class="name">Devoluciones</h4>
+              <p class="detail">No satisfecho con tu producto. Tu devolución será muy sencilla.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-card">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <h4 class="name">Tiendas</h4>
+              <p class="detail">Cada vez estamos más cerca de ti. Mira todas nuestras tiendas.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-card">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <h4 class="name">Entrega</h4>
+              <p class="detail">¡Wow! Envío gratis en menos de 48 horas laborables (Lima).</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-card">
+              <i class="fa fa-question" aria-hidden="true"></i>
+              <h4 class="name">Centro de ayuda</h4>
+              <p class="detail">Consejos y respuestas del Equipo Bransonsport.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-card">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+              <h4 class="name">Facturas electrónicas</h4>
+              <p class="detail">Consejos y respuestas del Equipo Bransonsport</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="footer-information">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <img src="src/images/logo_gra.jpg" alt="logo_bransonsport">
+              <p>Somos fabricantes y distribuidores de productos y accesorios de Medicina Deportiva con envíos diarios a todo el país. En nuestro catálogo, tenemos una enorme variedad de productos por los que se puede realizar un pedido a través de nuestra web y recibirlo en la comodidad de su casa.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h2>Categoría</h2>
+              <a>Deluxe</a>
+              <a>Clásico</a>
+              <a>Pre operatorio</a>
+              <a>Premium</a>
+              <a>Terapéutica</a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h2>Asistencia</h2>
+              <a>Contacta con nosotros</a>
+              <a>Preguntas frecuentes</a>
+              <a>Guía de tallas</a>
+              <a>Envío y entrega</a>
+              <a>Seguimiento de su pedido</a>
+              <a>Métodos de Pago</a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h2>Medios de pago</h2>
+              <h2>Síguenos</h2>
+              <a class="social-icons"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              <a class="social-icons"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+              <a class="social-icons"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="main-info-section" class="main-info-hidden-desktop">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="main-info-item">
+                <a><i class="fa fa-file-text-o" aria-hidden="true"></i>Facturas electrónicas</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-paper-plane" aria-hidden="true"></i>Mis pedidos</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-map-marker" aria-hidden="true"></i>Conoce nuestras tiendas</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-phone-square" aria-hidden="true"></i>Llámanos (01) 555-5555</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-whatsapp" aria-hidden="true"></i></i>999 999 999</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Suscríbete a nuestro boletín</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-envelope" aria-hidden="true"></i>servicioalcliente@bransonsport.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <a>Política de privacidad</a>
+              <a>Términos y Condiciones</a>
+              <a>Mapa de sitio</a>
+              <a>© 2019 Bransonsport</a>
+            </div>
+            <div class="col-lg-4">
+              <a><i class="fa fa-address-book-o" aria-hidden="true"></i>Libro de reclamaciones</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-box">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Iniciar sesión</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="md-form">
+                <input type="email" id="defaultForm-email" class="form-control">
+                <label for="defaultForm-email">Ingresar email</label>
+              </div>
+              <div class="md-form">
+                <input type="password" id="defaultForm-pass" class="form-control">
+                <label for="defaultForm-pass">Ingresar su contraseña</label>
+              </div>
+              <a class="forgot-pw">¿Olvidaste tu contraseña?</a>
+              <div class="justify-content-center">
+                <a class="w-100"><button class="btn btn-primary btn-sign">Ingresar</button></a>
+              </div>
+            </div>
+            <div class="hr-box">
+              <hr class="hr1">
+              <hr class="hr2">
+              <div class="span-box">
+                <span>Iniciar sesión con</span>
+              </div>
+            </div>
+            <div class="social-box">
+              <div class="row">
+                <div class="col-6">
+                  <a class="w-100"><button type="button" class="btn btn-primary"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</button></a>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-primary"><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google</button>
+                </div>
+              </div>
+            </div>
+            <div class="register-box">
+              <div class="text-center">
+                <span>¿No tiene una cuenta?</span>
+                <div class="d-flex justify-content-center">
+                  <a class="w-100"><button class="btn btn-primary btn-register waves-effect">Registrarme</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Modal Top Right -->
+  <div class="modal fade left" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-side modal-top-left" role="document">
+      <div class="modal-content">
+        <div class="navbar-menu">
+          <div class="menu-box">
+            <i class="fa fa-times navbar-button x-button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></i>
+            <div class="menu-items">
+              <div class="menu-item">
+                <a class="item-hidden-dk">Sport</a>
+                <a class="item-hidden-dk">Recovery</a>
+              </div>
+              <div class="menu-item">
+                <a>Deluxe</a>
+                <a>Clásico</a>
+                <a>Pre operatorio</a>
+                <a>Pos operatorio</a>
+                <a>Premium</a>
+                <a>Terapéutica</a>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-detail">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <span>999 999 999</span>
+              </div>
+              <div class="contact-detail">
+                <a><i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Nuestras tiendas</span></a>
+              </div>
+            </div>
+            <p>En cada una de nuestras categorías encontrarás productos y artículos con una descripción detallada para que tenga la mejor experiencia de compras y asquiera exactamente lo que está buscando.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Side Modal Top Right -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="src/mdbootstrap/js/jquery-3.4.1.min.js"></script>
+    <!-- Font Awesome fonts -->
+    <script src="https://use.fontawesome.com/d18e90b10d.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="src/mdbootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="src/mdbootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="src/mdbootstrap/js/mdb.min.js"></script>
+    <!-- Branson JS -->
+    <script type="text/javascript" src="src/js/branson.js"></script>
+  </body>
+</html>

@@ -49,34 +49,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item navbar-button">
-              <a class="nav-link waves-effect"><i class="fa fa-bars" aria-hidden="true"></i></a>
+              <a class="nav-link waves-effect" data-toggle="modal" data-target="#menuModal"><i class="fa fa-bars" aria-hidden="true"></i></a>
             </li>
-            <div class="navbar-menu hiden">
-              <div class="menu-box">
-                <i class="fa fa-times navbar-button x-button" aria-hidden="true"></i>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <a>Deluxe</a>
-                    <a>Clásico</a>
-                    <a>Pre operatorio</a>
-                    <a>Pos operatorio</a>
-                    <a>Premium</a>
-                    <a>Terapéutica</a>
-                  </div>
-                </div>
-                <div class="contact-box">
-                  <div class="contact-detail">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    <span>999 999 999</span>
-                  </div>
-                  <div class="contact-detail">
-                    <a><i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Nuestras tiendas</span></a>
-                  </div>
-                </div>
-                <p>En cada una de nuestras categorías encontrarás productos y artículos con una descripción detallada para que tenga la mejor experiencia de compras y asquiera exactamente lo que está buscando.</p>
-              </div>
-            </div>
             <li class="nav-item not-showing-xs">
               <a class="nav-link waves-effect">Sport</a>
             </li>
@@ -85,7 +59,7 @@
             </li>
           </ul>
           <div class="logo-box logo-desktop">
-            <a><img class="logo" src="src/images/logo_red.jpg" alt="branson_logo"></a>
+            <a href="index.html"><img class="logo" src="src/images/logo_red.jpg" alt="branson_logo"></a>
           </div>
           <div id="wrap">
             <form action="">
@@ -95,7 +69,7 @@
           </div>
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
-              <a class="nav-link waves-effect d-inline-block">
+              <a class="nav-link waves-effect d-inline-block" data-toggle="modal" data-target="#modalLoginForm">
                 <i class="fa fa-user-o" aria-hidden="true"></i>
               </a>
               <a class="nav-link waves-effect d-inline-block">
@@ -156,7 +130,7 @@
     <div class="container">
       <div class="row mg-btm">
         <div class="col-lg-6 col-md-12">
-          <h2>Productos <span>destacados</span></h2>
+          <h2>Productos <span class="font-thin">destacados</span></h2>
         </div>
         <div class="col-lg-6 col-md-12 filter-products">
           <div class="row">
@@ -605,7 +579,7 @@
         </div>
         <div class="col-lg-6 offer-box">
           <div class="offer-content text-center">
-            <h2>Oferta <span>única</span></h2>
+            <h2>Oferta <span class="font-thin">única</span></h2>
             <div class="timer-box">
               <div class="row">
                 <div class="col-3">
@@ -652,7 +626,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h2>¡Boletín <span>promocional!</span></h2>
+          <h2>¡Boletín <span class="font-thin">promocional!</span></h2>
           <h4>Sé el primero en recibir todas las ofertas y promociones</h4>
         </div>
         <div class="col-lg-6">
@@ -795,6 +769,100 @@
     </div>
   </footer>
   <!-- Footer -->
+  <!-- Login Modal -->
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-box">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Iniciar sesión</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="md-form">
+              <input type="email" id="defaultForm-email" class="form-control">
+              <label for="defaultForm-email">Ingresar email</label>
+            </div>
+            <div class="md-form">
+              <input type="password" id="defaultForm-pass" class="form-control">
+              <label for="defaultForm-pass">Ingresar su contraseña</label>
+            </div>
+            <a class="forgot-pw">¿Olvidaste tu contraseña?</a>
+            <div class="justify-content-center">
+              <a class="w-100"><button class="btn btn-primary btn-sign">Ingresar</button></a>
+            </div>
+          </div>
+          <div class="hr-box">
+            <hr class="hr1">
+            <hr class="hr2">
+            <div class="span-box">
+              <span>Iniciar sesión con</span>
+            </div>
+          </div>
+          <div class="social-box">
+            <div class="row">
+              <div class="col-6">
+                <a class="w-100"><button type="button" class="btn btn-primary"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</button></a>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-primary"><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google</button>
+              </div>
+            </div>
+          </div>
+          <div class="register-box">
+            <div class="text-center">
+              <span>¿No tiene una cuenta?</span>
+              <div class="d-flex justify-content-center">
+                <a class="w-100"><button class="btn btn-primary btn-register waves-effect">Registrarme</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side Modal Top Right -->
+<div class="modal fade left" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-side modal-top-left" role="document">
+    <div class="modal-content">
+      <div class="navbar-menu">
+        <div class="menu-box">
+          <i class="fa fa-times navbar-button x-button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></i>
+          <div class="menu-items">
+            <div class="menu-item">
+              <a class="item-hidden-dk">Sport</a>
+              <a class="item-hidden-dk">Recovery</a>
+            </div>
+            <div class="menu-item">
+              <a>Deluxe</a>
+              <a>Clásico</a>
+              <a>Pre operatorio</a>
+              <a>Pos operatorio</a>
+              <a>Premium</a>
+              <a>Terapéutica</a>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="contact-detail">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <span>999 999 999</span>
+            </div>
+            <div class="contact-detail">
+              <a><i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Nuestras tiendas</span></a>
+            </div>
+          </div>
+          <p>En cada una de nuestras categorías encontrarás productos y artículos con una descripción detallada para que tenga la mejor experiencia de compras y asquiera exactamente lo que está buscando.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Side Modal Top Right -->
   <!-- JQuery -->
   <script type="text/javascript" src="src/mdbootstrap/js/jquery-3.4.1.min.js"></script>
   <!-- Font Awesome fonts -->
