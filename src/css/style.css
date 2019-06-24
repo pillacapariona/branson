@@ -496,7 +496,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 /* General products section */
 
 #general-products {
-  background-color: #1A1A1A;
+  background-image: url('../images/bg_productos.jpg');
+  background-repeat: repeat;
   padding: 70px 35px;
   color: #FFF;
 }
@@ -1064,7 +1065,8 @@ input[type=date]:focus:not([readonly])+label, input[type=datetime-local]:focus:n
 
 #filter-products {
   padding: 70px 20px;
-  background-color: #191919;
+  background-image: url('../images/bg_productos.jpg');
+  background-repeat: repeat;
 }
 
 #filter-products .filter-col {
@@ -1208,6 +1210,267 @@ input[type=range]::-ms-thumb {
     width: 20px !important;
 }
 
+#recommendation-section {
+  padding-top: 90px;
+  background-image: url('../images/bg_productos.jpg');
+  background-repeat: repeat;
+}
+
+#recommendation-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFF;
+  font-style: italic;
+  padding-left: 3vw;
+  margin-bottom: 0;
+}
+
+.breadcrumb {
+  padding-top: 190px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  background-color: #333333;
+  padding-left: 6vw;
+  border-radius: 0;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #cacaca;
+}
+
+#product-detail-section {
+  padding: 50px 3vw;
+  background-image: url('../images/bg_productos.jpg');
+  background-repeat: repeat;
+}
+
+#product-detail-section .product-name-box {
+  padding-left: 1vw;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#product-detail-section h2 {
+  font-size: 3rem;
+  color: #FFF;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#product-detail-section .product-desc {
+  display: block;
+  font-size: 1.1rem;
+  color: #C9C9C9;
+  font-weight: 400;
+}
+
+#product-detail-section .code-product {
+  color: #E6001D;
+  font-size: 1.1rem;
+  display: block;
+  margin-top: 7px;
+}
+
+#product-detail-section .product-detail-col .price-box {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+#product-detail-section .product-detail-col .price-box .regular-price {
+  display: block;
+  font-size: 1rem;
+  color: #939393;
+}
+
+#product-detail-section .product-detail-col .price-box .price {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+}
+
+#product-detail-section .product-detail-col .price-box .saving {
+  display: block;
+  font-size: 1rem;
+  color: #616161;
+}
+
+#product-detail-section .quantity-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+#product-detail-section .quantity-box .number-box .btn-number {
+  padding: 3px 10px;
+  font-size: 1.2rem;
+  background-color: #E5E5E5 !important;
+  color: #7F7F7F;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+
+#product-detail-section .quantity-box .number-box .btn-number:last-child {
+  margin-right: 30px;
+}
+
+#product-detail-section .quantity-box .number-box .number {
+  color: #fff;
+  padding: 0 10px;
+}
+
+#product-detail-section .quantity-box .number-box, #product-detail-section .quantity-box .btns {
+  display: inline-block;
+}
+
+#product-detail-section .quantity-box .btn-add {
+  background-color: transparent !important;
+  color: #fff;
+  text-transform: none;
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  font-weight: 200;
+  border-radius: 0;
+}
+
+#product-detail-section .size-color-box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+#product-detail-section .quantity-box .btn-purchase {
+  background-color: #E6001D !important;
+  color: #fff;
+  text-transform: none;
+  padding: 5px 20px;
+  font-weight: 200;
+  border-radius: 0;
+}
+
+#product-detail-section .quantity-box .btns .btn-primary i {
+  margin-right: 8px;
+}
+
+#product-detail-section .size-color-box h6 {
+  padding-left: 5px;
+}
+
+#product-detail-section .size-color-box .btn-size {
+  border: 1px solid #707070;
+  color: #707070;
+  background-color: transparent !important;
+  padding: 0px 6px;
+  font-size: 1rem;
+  display: inline-block;
+  font-weight: 500;
+}
+
+#product-detail-section .size-box {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#product-detail-section .size-color-box .size-box .btn-active {
+  background-color: #FFF !important;
+}
+
+#product-detail-section .color-box {
+  display: inline-block;
+}
+
+#product-detail-section .color-box .btn-color {
+  padding: 10px;
+  border-radius: 0;
+}
+
+#product-detail-section .color-box .btn-active {
+  border: 1px solid #fff;
+}
+
+#product-detail-section .stock-box {
+  padding: 15px 5px;
+  border-bottom: 1px solid #fff;
+}
+
+#product-detail-section .stock-box .box {
+  padding: 15px;
+  display: inline-block;
+}
+
+#product-detail-section .stock-box i {
+  font-size: 1.4rem;
+  color: #FFF;
+  float: left;
+}
+
+#product-detail-section .stock-box .title {
+  color: #fff;
+  display: block;
+  margin-left: 35px;
+}
+
+#product-detail-section .stock-box .status {
+  color: #616161;
+  display: table;
+  margin-left: 35px;
+  font-size: 0.9rem;
+}
+
+#product-detail-section .stock-box .title a {
+  color: #E6001D;
+}
+
+#product-detail-section .details-box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#product-detail-section .details-box .box {
+  margin-right: 30px;
+  display: inline-table;
+}
+
+#product-detail-section .details-box .box .title {
+  color: #fff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#product-detail-section .details-box .box a {
+  font-size: 1.7rem;
+  color: #CBCBCB;
+  margin-right: 10px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+#product-detail-section .information-box .card {
+  background-color: transparent;
+}
+
+#product-detail-section .information-box .card .card-header a {
+  color: #7a7a7a;
+}
+
+#product-detail-section .information-box .card .card-header a h5 {
+  font-size: 1rem;
+}
+
+#product-detail-section .information-box .card .fa-angle-down {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+#product-detail-section .information-box h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 100%;
@@ -1217,6 +1480,9 @@ input[type=range]::-ms-thumb {
 @media (max-width: 1229px) {
   .nav-2 {
     top: 60px;
+  }
+  .breadcrumb {
+    padding-top: 210px;
   }
 }
 
@@ -1391,6 +1657,9 @@ input[type=range]::-ms-thumb {
     height: 15px;
     font-size: 0.6rem;
     top: 18px;
+  }
+  .breadcrumb {
+    padding-top: 100px;
   }
 }
 

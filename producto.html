@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Branson Sport</title>
-  <!-- Latest compiled and minified CSS Bootrstrap -->
-  <link rel="stylesheet" href="src/mdbootstrap/css/bootstrap.min.css">
-  <!-- MDB Bootstrap material minified CSS -->
-  <link rel="stylesheet" href="src/mdbootstrap/css/mdb.min.css">
-  <!-- Branson Styles -->
-  <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
+  <head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Producto</title>
+    <!-- Latest compiled and minified CSS Bootrstrap -->
+    <link rel="stylesheet" href="src/mdbootstrap/css/bootstrap.min.css">
+    <!-- MDB Bootstrap material minified CSS -->
+    <link rel="stylesheet" href="src/mdbootstrap/css/mdb.min.css">
+    <!-- Branson Styles -->
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
   <!--Navbar -->
   <header>
     <nav class="mb-1 navbar navbar-expand fixed-top fixed-top-1">
@@ -76,6 +75,7 @@
                 <i class="fa fa-heart-o" aria-hidden="true"></i>
               </a>
               <a class="nav-link waves-effect d-inline-block">
+                <span class="items-number">1</span>
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               </a>
             </li>
@@ -85,68 +85,141 @@
     </nav>
   </header>
   <!--/Navbar -->
-  <!--/ Main section -->
-  <section id= cover_section>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Catálogo</a></li>
+      <li class="breadcrumb-item"><a href="#">línea</a></li>
+      <li class="breadcrumb-item"><a href="#">producto</a></li>
+      <li class="breadcrumb-item active">código</li>
+    </ol>
+  </nav>
+  <section id="product-detail-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6"></div>
-        <div class="col-lg-4">
-          <h1>Línea Sport</h1>
-          <h3>Prendas confortables para actividades deportivas</h3>
-          <a>
-            <button type="button" class="btn btn-primary waves-effect">descúbrelo ahora</button>
-          </a>
+        <div class="product-name-box">
+          <h2>Nombre del producto</h2>
+          <span class="product-desc">Rodillera con soporte rotuliano</span>
+          <span class="code-product">Código: Bra-137</span>
         </div>
-      </div>
-      <div class="cart-count-box">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <span class="counter-cart">0</span>
+        <div class="col-xl-6"></div>
+        <div class="col-xl-6 product-detail-col">
+          <div class="price-box">
+            <span class="regular-price">Regular <span class="line-through">S/. 200.00</span></span>
+            <span class="price">S/. 150.00</span>
+            <span class="saving">Ahorra S/. 50.00</span>
+          </div>
+          <div class="quantity-box">
+            <div class="number-box">
+              <button type="button" class="btn btn-primary btn-number"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="number">1</span>
+              <button type="button" class="btn btn-primary btn-number"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+            <div class="btns">
+              <button type="button" class="btn btn-primary btn-add"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Añadir a cesta</button>
+              <button type="button" class="btn btn-primary btn-purchase"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Comprar ahora</button>
+            </div>
+          </div>
+          <div class="size-color-box">
+            <div class="size-box">
+              <h6>Talla</h6>
+              <button type="button" class="btn btn-primary btn-size">S</button>
+              <button type="button" class="btn btn-primary btn-size btn-active">M</button>
+              <button type="button" class="btn btn-primary btn-size">L</button>
+              <button type="button" class="btn btn-primary btn-size">XL</button>
+              <button type="button" class="btn btn-primary btn-size">XXL</button>
+            </div>
+            <div class="color-box">
+              <h6>Color disponible</h6>
+              <button type="button" class="btn btn-primary btn-orange btn-color btn-active"></button>
+              <button type="button" class="btn btn-primary btn-light btn-color"></button>
+              <button type="button" class="btn btn-primary btn-grey btn-color"></button>
+              <button type="button" class="btn btn-primary btn-black btn-color"></button>
+              <button type="button" class="btn btn-primary btn-yellow btn-color"></button>
+            </div>
+          </div>
+          <div class="stock-box">
+            <div class="box">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span class="title">Retiro de tienda</span>
+              <span class="status">Disponible</span>
+            </div>
+            <div class="box">
+              <i class="fa fa-truck" aria-hidden="true"></i>
+              <span class="title">Despacho a domicilio</span>
+              <span class="status">Disponible</span>
+            </div>
+            <div class="box">
+              <i class="fa fa-refresh" aria-hidden="true"></i>
+              <span class="title"><a>Consultar el stock</a></span>
+            </div>
+          </div>
+          <div class="details-box">
+            <div class="box">
+              <span class="title">Método de pago:</span>
+            </div>
+            <div class="box">
+              <span class="title">Compartir producto:</span>
+              <a><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="box">
+              <span class="title">Ficha técnica:</span>
+              <a><i class="fa fa-file-text" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-12 information-box">
+          <h3>Información del producto</h3>
+          <!--Accordion wrapper-->
+          <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+          <!-- Accordion card -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingTwo1">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                  aria-expanded="false" aria-controls="collapseTwo1">
+                  <h5>Descripción general<i class="fa fa-angle-down rotate-icon"></i></h5>
+                </a>
+              </div>
+              <!-- Card body -->
+              <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nu assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          <!-- Accordion card -->
+          <!-- Accordion card -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingTwo2">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
+                  aria-expanded="false" aria-controls="collapseTwo21">
+                  <h5>Ficha técnica<i class="fa fa-angle-down rotate-icon"></i></h5>
+                </a>
+              </div>
+              <!-- Card body -->
+              <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nu assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion card -->
+          </div>
+        <!-- Accordion wrapper -->
+        </div>
       </div>
     </div>
   </section>
-  <section id="both-products-section">
+  <section id="recommendation-section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 product-1">
-          <div class="card-product">
-            <a>
-              <button type="button" class="btn btn-primary btn-product-1 waves-effect">línea sport</button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-6 product-2">
-          <div class="card-product">
-            <a>
-              <button type="button" class="btn btn-primary btn-product-2 waves-effect">línea recovery</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Main section -->
-  <!--/ Products section -->
-  <section id="general-products">
-    <div class="container">
-      <div class="row mg-btm">
-        <div class="col-lg-6 col-md-12">
-          <h2>Productos <span class="font-thin">destacados</span></h2>
-        </div>
-        <div class="col-lg-6 col-md-12 filter-products">
-          <div class="row">
-            <div class="col-4">
-              <a class="active">Los más vendidos</a>
-            </div>
-            <div class="col-4">
-              <a>Nuevos productos</a>
-            </div>
-            <div class="col-4">
-              <a>Productos en oferta</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
+      <h2>Te puede <span class="font-thin">interesar</span></h2>
+      <div class="row" id="general-products">
         <div class="col-lg-3 col-md-6 col-sm-6 product-card">
           <div class="image-box">
             <div class="content text-center">
@@ -197,119 +270,6 @@
         <div class="col-lg-3 col-md-6 col-sm-6 product-card">
           <div class="image-box">
             <div class="content text-center">
-              <div class="extra-info text-left">
-                <div>
-                  <span class="detail">Precio reducido</span>
-                  <span class="disccount">-10%</span>
-                </div>
-                <span class="state">nuevo</span>
-              </div>
-              <div class="btns-box">
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </a>
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                  </button>
-                </a>
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="description-box text-center">
-            <span class="name">Nombre del producto</span>
-            <span class="price current-price">S/. 90.00</span>
-            <span class="price prev-price">S/. 100.00</span>
-          </div>
-          <div class="purchase-box">
-            <div class="row">
-              <div class="col-lg-6">
-                <a>
-                  <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    Añadir a cesta
-                  </button>
-                </a>
-              </div>
-              <div class="col-lg-6">
-                <a>
-                  <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    Comprar ahora
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 product-card">
-          <div class="image-box">
-            <div class="content text-center">
-              <div class="extra-info text-left">
-                <div>
-                  <span class="detail">Precio reducido</span>
-                  <span class="disccount">-10%</span>
-                </div>
-                <span class="state">nuevo</span>
-              </div>
-              <div class="btns-box">
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </a>
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                  </button>
-                </a>
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="description-box text-center">
-            <span class="name">Nombre del producto</span>
-            <span class="price current-price">S/. 90.00</span>
-            <span class="price prev-price">S/. 100.00</span>
-          </div>
-          <div class="purchase-box">
-            <div class="row">
-              <div class="col-lg-6">
-                <a>
-                  <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    Añadir a cesta
-                  </button>
-                </a>
-              </div>
-              <div class="col-lg-6">
-                <a>
-                  <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    Comprar ahora
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 product-card">
-          <div class="image-box">
-            <div class="content text-center">
-              <div class="extra-info text-left">
-                <span class="state">nuevo</span>
-              </div>
               <div class="btns-box">
                 <a class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
@@ -332,7 +292,6 @@
           <div class="description-box text-center">
             <span class="name">Nombre del producto</span>
             <span class="price current-price">S/. 100.00</span>
-            <span class="price prev-price">S/. 100.00</span>
           </div>
           <div class="purchase-box">
             <div class="row">
@@ -355,8 +314,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 product-card">
           <div class="image-box">
             <div class="content text-center">
@@ -407,119 +364,6 @@
         <div class="col-lg-3 col-md-6 col-sm-6 product-card">
           <div class="image-box">
             <div class="content text-center">
-              <div class="extra-info text-left">
-                <div>
-                  <span class="detail">Precio reducido</span>
-                  <span class="disccount">-10%</span>
-                </div>
-                <span class="state">nuevo</span>
-              </div>
-              <div class="btns-box">
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </a>
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                  </button>
-                </a>
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="description-box text-center">
-            <span class="name">Nombre del producto</span>
-            <span class="price current-price">S/. 90.00</span>
-            <span class="price prev-price">S/. 100.00</span>
-          </div>
-          <div class="purchase-box">
-            <div class="row">
-              <div class="col-lg-6">
-                <a>
-                  <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    Añadir a cesta
-                  </button>
-                </a>
-              </div>
-              <div class="col-lg-6">
-                <a>
-                  <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    Comprar ahora
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 product-card">
-          <div class="image-box">
-            <div class="content text-center">
-              <div class="extra-info text-left">
-                <div>
-                  <span class="detail">Precio reducido</span>
-                  <span class="disccount">-10%</span>
-                </div>
-                <span class="state">nuevo</span>
-              </div>
-              <div class="btns-box">
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </a>
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                  </button>
-                </a>
-                <a class="img-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="description-box text-center">
-            <span class="name">Nombre del producto</span>
-            <span class="price current-price">S/. 90.00</span>
-            <span class="price prev-price">S/. 100.00</span>
-          </div>
-          <div class="purchase-box">
-            <div class="row">
-              <div class="col-lg-6">
-                <a>
-                  <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    Añadir a cesta
-                  </button>
-                </a>
-              </div>
-              <div class="col-lg-6">
-                <a>
-                  <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    Comprar ahora
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 product-card">
-          <div class="image-box">
-            <div class="content text-center">
-              <div class="extra-info text-left">
-                <span class="state">nuevo</span>
-              </div>
               <div class="btns-box">
                 <a class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
@@ -542,7 +386,194 @@
           <div class="description-box text-center">
             <span class="name">Nombre del producto</span>
             <span class="price current-price">S/. 100.00</span>
-            <span class="price prev-price">S/. 100.00</span>
+          </div>
+          <div class="purchase-box">
+            <div class="row">
+              <div class="col-lg-6">
+                <a>
+                  <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Añadir a cesta
+                  </button>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a>
+                  <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    Comprar ahora
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 product-card">
+          <div class="image-box">
+            <div class="content text-center">
+              <div class="btns-box">
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </a>
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  </button>
+                </a>
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="description-box text-center">
+            <span class="name">Nombre del producto</span>
+            <span class="price current-price">S/. 100.00</span>
+          </div>
+          <div class="purchase-box">
+            <div class="row">
+              <div class="col-lg-6">
+                <a>
+                  <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Añadir a cesta
+                  </button>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a>
+                  <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    Comprar ahora
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 product-card">
+          <div class="image-box">
+            <div class="content text-center">
+              <div class="btns-box">
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </a>
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  </button>
+                </a>
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="description-box text-center">
+            <span class="name">Nombre del producto</span>
+            <span class="price current-price">S/. 100.00</span>
+          </div>
+          <div class="purchase-box">
+            <div class="row">
+              <div class="col-lg-6">
+                <a>
+                  <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Añadir a cesta
+                  </button>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a>
+                  <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    Comprar ahora
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 product-card">
+          <div class="image-box">
+            <div class="content text-center">
+              <div class="btns-box">
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </a>
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  </button>
+                </a>
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="description-box text-center">
+            <span class="name">Nombre del producto</span>
+            <span class="price current-price">S/. 100.00</span>
+          </div>
+          <div class="purchase-box">
+            <div class="row">
+              <div class="col-lg-6">
+                <a>
+                  <button type="button" class="btn btn-primary purchase-btn-1 waves-effect">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Añadir a cesta
+                  </button>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a>
+                  <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    Comprar ahora
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 product-card">
+          <div class="image-box">
+            <div class="content text-center">
+              <div class="btns-box">
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </a>
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir a favoritos">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  </button>
+                </a>
+                <a class="img-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Compartir">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="description-box text-center">
+            <span class="name">Nombre del producto</span>
+            <span class="price current-price">S/. 100.00</span>
           </div>
           <div class="purchase-box">
             <div class="row">
@@ -568,59 +599,6 @@
       </div>
     </div>
   </section>
-  <!-- General products -->
-  <!-- Offer -->
-  <section id="offer-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-description">
-          <h2>Línea Sport</h2>
-          <h4>Prendas confortables para actividades deportivas</h4>
-        </div>
-        <div class="col-lg-6 offer-box">
-          <div class="offer-content text-center">
-            <h2>Oferta <span class="font-thin">única</span></h2>
-            <div class="timer-box">
-              <div class="row">
-                <div class="col-3">
-                  <div class="time">
-                    <span class="number">2</span>
-                    <span class="detail">Días</span>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="time">
-                    <span class="number">48</span>
-                    <span class="detail">Horas</span>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="time">
-                    <span class="number">18</span>
-                    <span class="detail">Min</span>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="time">
-                    <span class="number">30</span>
-                    <span class="detail">Seg</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="disccount-box">
-              <span class="price current-price">S/. 112.50</span>
-              <span class="price prev-price">S/. 250.00</span>
-            </div>
-            <a>
-              <button type="button" class="btn btn-primary btn-offer waves-effect">Comprar ahora</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Offer Section -->
   <!-- Mail Section -->
   <section id="mail-section">
     <div class="container">
@@ -863,18 +841,18 @@
   </div>
 </div>
 <!-- Side Modal Top Right -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="src/mdbootstrap/js/jquery-3.4.1.min.js"></script>
-  <!-- Font Awesome fonts -->
-  <script src="https://use.fontawesome.com/d18e90b10d.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="src/mdbootstrap/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="src/mdbootstrap/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="src/mdbootstrap/js/mdb.min.js"></script>
-  <!-- Branson JS -->
-  <script type="text/javascript" src="src/js/branson.js"></script>
-</body>
-
+  <body>
+    <!-- JQuery -->
+    <script type="text/javascript" src="src/mdbootstrap/js/jquery-3.4.1.min.js"></script>
+    <!-- Font Awesome fonts -->
+    <script src="https://use.fontawesome.com/d18e90b10d.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="src/mdbootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="src/mdbootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="src/mdbootstrap/js/mdb.min.js"></script>
+    <!-- Branson JS -->
+    <script type="text/javascript" src="src/js/branson.js"></script>
+  </body>
 </html>
