@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Producto</title>
-    <!-- Latest compiled and minified CSS Bootrstrap -->
-    <link rel="stylesheet" href="src/mdbootstrap/css/bootstrap.min.css">
-    <!-- MDB Bootstrap material minified CSS -->
-    <link rel="stylesheet" href="src/mdbootstrap/css/mdb.min.css">
-    <!-- Branson Styles -->
-    <link rel="stylesheet" href="src/css/style.css">
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Producto</title>
+  <!-- Latest compiled and minified CSS Bootrstrap -->
+  <link rel="stylesheet" href="src/mdbootstrap/css/bootstrap.min.css">
+  <!-- MDB Bootstrap material minified CSS -->
+  <link rel="stylesheet" href="src/mdbootstrap/css/mdb.min.css">
+  <!-- Branson Styles -->
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
   <!--Navbar -->
   <header>
     <nav class="mb-1 navbar navbar-expand fixed-top fixed-top-1">
@@ -101,8 +102,22 @@
           <span class="product-desc">Rodillera con soporte rotuliano</span>
           <span class="code-product">Código: Bra-137</span>
         </div>
-        <div class="col-xl-6"></div>
-        <div class="col-xl-6 product-detail-col">
+        <div class="col-xl-6 col-lg-6 col-md-6 gallery">
+          <!-- The grid: four columns -->
+          <div class="column">
+            <img class="img-fluid" src="src/images/test-image.jpeg" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img class="img-fluid" src="src/images/text-image2.jpeg" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img class="img-fluid" src="src/images/test-image3.jpeg" onclick="myFunction(this);">
+          </div>
+          <div class="big-image">
+            <img class="img-fluid" id="expandedImg">
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 product-detail-col">
           <div class="price-box">
             <span class="regular-price">Regular <span class="line-through">S/. 200.00</span></span>
             <span class="price">S/. 150.00</span>
@@ -841,7 +856,6 @@
   </div>
 </div>
 <!-- Side Modal Top Right -->
-  <body>
     <!-- JQuery -->
     <script type="text/javascript" src="src/mdbootstrap/js/jquery-3.4.1.min.js"></script>
     <!-- Font Awesome fonts -->
@@ -854,5 +868,16 @@
     <script type="text/javascript" src="src/mdbootstrap/js/mdb.min.js"></script>
     <!-- Branson JS -->
     <script type="text/javascript" src="src/js/branson.js"></script>
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+
+      $(function() {
+        myFunction($('#product-detail-section .gallery .img-fluid')[0]);
+      });
+    </script>
   </body>
 </html>

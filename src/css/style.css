@@ -1117,7 +1117,7 @@ input[type=date]:focus:not([readonly])+label, input[type=datetime-local]:focus:n
   padding-top: 15px;
 }
 
-#filter-products .form-check-input[type=checkbox]:checked+label:before, label.btn input[type=checkbox]:checked+label:before {
+#filter-products .form-check-input[type=checkbox]:checked+label:before, label.btn input[type=checkbox]:checked+label:before, #purchase-section .form-check-input[type=checkbox]:checked+label:before, label.btn input[type=checkbox]:checked+label:before {
   border-right: 2px solid #E6001D !important;
   border-bottom: 2px solid #E6001D !important;
 }
@@ -1471,6 +1471,455 @@ input[type=range]::-ms-thumb {
   margin-top: 40px;
 }
 
+#purchase-section {
+  background-color: #1A1A1A;
+  padding: 180px 2vw 30px 2vw;
+}
+
+#purchase-section .stepper .active .circle {
+  background-color: #E6001D !important;
+  color: #fff;
+}
+
+#purchase-section .stepper .circle {
+  background-color: #CACACA;
+  color: #000;
+  font-weight: 500;
+}
+
+#purchase-section .stepper  .label {
+  color: #cacaca;
+  font-weight: 300;
+  display: block;
+  text-transform: uppercase;
+}
+
+#purchase-section .stepper-horizontal li:not(:first-child):before, .stepper-horizontal li:not(:last-child):after {
+  background-color: #cacaca;
+}
+
+#purchase-section .stepper-horizontal li {
+  transition: .5s;
+}
+
+#purchase-section .stepper-horizontal li:hover {
+    background-color: rgba(0,0,0,.3);
+}
+
+#purchase-section .card-product {
+  background-color: #1A1A1A;
+  box-shadow: none;
+}
+
+#purchase-section thead {
+  background-color: transparent !important;
+  border-bottom: 1px solid #cacaca;
+}
+
+#purchase-section thead th {
+  color: #cacaca;
+  font-weight: 200;
+}
+
+#purchase-section td h5 {
+  color: #fff;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#purchase-section td .detail-product {
+  color: #cacaca;
+  margin-bottom: 5px;
+}
+
+#purchase-section td .code-product {
+  color: #E6001D;
+}
+
+#purchase-section td .prev-price {
+  text-decoration: line-through;
+  color: #808080;
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+}
+
+#purchase-section td .current-price {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#purchase-section td .btn-number {
+  padding: 3px 7px;
+  font-size: 0.8rem;
+  background-color: #E5E5E5 !important;
+  color: #7F7F7F;
+  border-radius: 0;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+#purchase-section td .number {
+  display: inline-block;
+  color: #fff;
+  padding: 0 5px;
+}
+
+#purchase-section td .subtotal {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+
+#purchase-section td .btn-remove {
+  background-color: transparent !important;
+  font-size: 1.4rem;
+  box-shadow: none;
+  text-transform: none;
+}
+
+#purchase-section tr {
+  border-bottom: 1px solid #cacaca;
+}
+
+#purchase-section .coupon-box {
+  background-color: #CBCBCB;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#purchase-section .coupon-box .title {
+  display: block;
+  color: #000;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+#purchase-section .coupon-box input {
+  display: inline-block;
+  border-radius: 0;
+  width: 60%;
+}
+
+#purchase-section .coupon-box button {
+  display: inline-block;
+  text-transform: none;
+  background-color: #E6001D !important;
+  padding: 8px 15px;
+  border-radius: 0;
+  margin-top: 0px;
+}
+
+#purchase-section .link-return {
+  color: #ab3036;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 0.9rem;
+}
+
+#purchase-section .purchase-summary-box {
+  background-color: #CBCBCB;
+  padding: 25px 20px 20px;
+  margin-bottom: 40px;
+}
+
+#purchase-section .purchase-summary-box h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#purchase-section .purchase-summary-box .detail-box {
+  padding: 10px 0px;
+  font-size: 0.9rem;
+}
+
+#purchase-section .purchase-summary-box .detail-box .right {
+  float: right;
+}
+
+#purchase-section .purchase-summary-box .btn-box {
+  padding: 20px 0px;
+  border-top: 1px solid #000;
+  margin-top: 15px;
+}
+
+#purchase-section .purchase-summary-box .btn-box .btn-next {
+  background-color: #E6001D !important;
+  width: 100%;
+  border-radius: 0;
+  padding: 7px;
+  margin: 0;
+}
+
+#product-detail-section .gallery .column {
+  float: left;
+  width: 85px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+#product-detail-section .gallery .column img {
+  opacity: 0.8;
+  cursor: pointer;
+  height: 100px;
+}
+
+#product-detail-section .gallery .column img:hover {
+  opacity: 1;
+}
+
+#expandedImg {
+  margin-bottom: 30px;
+  max-height: 600px;
+}
+
+#product-detail-section .gallery .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#product-detail-section .gallery #expandedImg {
+  width: 100%;
+}
+
+#purchase-section .email-col h5 {
+  text-transform: uppercase;
+  color: #4e4e4e;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+#purchase-section .email-col .slogan {
+  color: #9a9a9a;
+  margin-bottom: 30px;
+}
+
+#purchase-section .email-col input {
+  background-color: transparent;
+  border: 1px solid #cacaca;
+  border-radius: 0;
+  width: 100%;
+  color: #cacaca;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+#purchase-section .email-col .btn-continue {
+  background-color: #E6001D !important;
+  border-radius: 0;
+  padding: 10px 30px;
+  width: 60%;
+  margin: 50px 0 70px 0;
+}
+
+#purchase-section .email-col .p-info {
+  color: #4e4e4e;
+  margin-bottom: 25px;
+}
+
+#purchase-section .email-col .list-item {
+  display: block;
+  color: #9a9a9a;
+  margin-bottom: 5px;
+}
+
+#purchase-section .email-col .list-item i {
+  margin-right: 5px;
+  font-size: 1.2rem;
+  position: relative;
+  top: 2px;
+}
+
+#purchase-section .email-col {
+  padding: 70px 30vw 70px 30vw;
+}
+
+#purchase-section .back-link {
+  color: #ab3036;
+  margin-right: 1vw;
+}
+
+#purchase-section .summary-card {
+  background-color: #fff;
+  padding: 5px 20px 5px 5px;
+  min-height: 130px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  overflow: auto;
+}
+
+#purchase-section .summary-card img {
+  width: 100px;
+  float: left;
+}
+
+#purchase-section .summary-card .name {
+  display: block;
+  margin-left: 120px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+#purchase-section .summary-card .quantity-box {
+  display: block;
+  margin-left: 120px;
+  margin-top: 15px;
+}
+
+#purchase-section .summary-card .quantity-box .quantity {
+  float: left;
+  font-size: 0.9rem;
+}
+
+#purchase-section .summary-card .quantity-box .price {
+  float: right;
+  font-size: 0.9rem;
+}
+
+#purchase-section .accordion {
+  margin-bottom: 40px;
+}
+
+#purchase-section .accordion .card {
+  background-color: transparent;
+  border-bottom: 0px;
+}
+
+#purchase-section .accordion .card-header {
+  background-color: #333333;
+  border-bottom: 5px solid #1a1a1a;
+}
+
+#purchase-section .accordion .card-header p {
+  margin-bottom: 0;
+  color: #9a9a9a;
+}
+
+#purchase-section .accordion .card-header h5 {
+  color: #6b6b6b;
+}
+
+#purchase-section .accordion .card-body {
+  padding-top: 50px;
+}
+
+#purchase-section .accordion .card-body .input-information {
+  border: 1px solid #cacaca;
+  background-color: transparent !important;
+  border-radius: 0px;
+  color: #9a9a9a;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#purchase-section .accordion .card-body .check-validation {
+  position: absolute;
+  right: 4%;
+  top: 10px;
+  font-size: 1.6rem;
+  color: #E6001D;
+}
+
+#purchase-section .form-check-input[type=radio].with-gap:checked+label:after, .form-check-input[type=radio]:checked+label:after, label.btn input[type=radio].with-gap:checked+label:after, label.btn input[type=radio]:checked+label:after {
+  background-color: #E6001D;
+}
+
+#purchase-section .form-check-input[type=radio].with-gap:checked+label:after, .form-check-input[type=radio].with-gap:checked+label:before, .form-check-input[type=radio]:checked+label:after, label.btn input[type=radio].with-gap:checked+label:after, label.btn input[type=radio].with-gap:checked+label:before, label.btn input[type=radio]:checked+label:after {
+  border: 2px solid #E6001D;
+}
+
+#purchase-section .accordion .card-body .policy {
+  color: #E6001D !important;
+}
+
+#purchase-section .accordion .card-body .form-check {
+  padding-left: 0px;
+}
+
+#purchase-section .accordion .card-body .btn-next {
+  background-color: #E6001D !important;
+  width: 100%;
+  border-radius: 0;
+  padding: 7px;
+  margin: 40px 0px 10px 0px;
+}
+
+#purchase-section .accordion .card-body .form-check-policy {
+  margin-top: 30px;
+}
+
+#purchase-section .accordion .card-body .select-dropdown {
+  color: #6c757d;
+}
+
+#purchase-section .accordion .card-body .select-wrapper input.active {
+  box-shadow: 0 1px 0 0 #cacaca;
+  border-bottom: 1px solid #cacaca;
+}
+
+#purchase-section .accordion .card-body .dropdown-content {
+  background-color: #292929;
+}
+
+#purchase-section .accordion .card-body .select-dropdown li.disabled, .select-dropdown li.disabled>span, .select-dropdown li.optgroup {
+  color: rgba(212, 212, 212, 0.3);
+}
+
+#purchase-section .accordion .card-body .dropdown-content li>a, .dropdown-content li>span {
+  color: #bdbdbd;
+}
+
+#purchase-section .accordion .card-body .dropdown-content li.active, .dropdown-content li:hover {
+  background-color: #3e3e3e;
+}
+
+#purchase-section .accordion .card-body .select-wrapper span.caret {
+  color: #6c757d;
+}
+
+#purchase-section .accordion .card-body .payment-p {
+  font-size: 1rem;
+  color: #c1c1c1;
+  margin-top: 10px;
+}
+
+#purchase-section .accordion .card-body .payment-icons i{
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#purchase-section .accordion .card-body .payment-icons .card {
+  color: #e2e2e2 !important;
+  display: block;
+  text-align: -webkit-right;
+}
+
+#purchase-section .accordion .card-body .payment-icons .circle-div {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: 2px solid #E6001D;
+  position: absolute;
+  top: 15px;
+  left: 29px;
+}
+
+#purchase-section .accordion .card-body .date-card {
+  padding: 6px;
+}
+
+@media (max-width: 888px) {
+  #purchase-section .email-col {
+    padding: 70px 10vw 70px 10vw;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 100%;
@@ -1660,6 +2109,19 @@ input[type=range]::-ms-thumb {
   }
   .breadcrumb {
     padding-top: 100px;
+  }
+  #purchase-section {
+    padding-top: 60px;
+  }
+  #purchase-section .accordion .card-body .check-validation {
+    right: 8%;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+.stepper-horizontal li:not(:last-child):after {
+    height: calc(90% - 40px);
+    top: 5.3rem;
   }
 }
 

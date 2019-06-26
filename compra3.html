@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Compra</title>
+  <!-- Latest compiled and minified CSS Bootrstrap -->
+  <link rel="stylesheet" href="src/mdbootstrap/css/bootstrap.min.css">
+  <!-- MDB Bootstrap material minified CSS -->
+  <link rel="stylesheet" href="src/mdbootstrap/css/mdb.min.css">
+    <!-- Stepper CSS -->
+  <link href="src/mdbootstrap/css/addons-pro/steppers.css" rel="stylesheet">
+  <!-- Stepper CSS - minified-->
+  <link href="src/mdbootstrap/css/addons-pro/steppers.min.css" rel="stylesheet">
+  <!-- Branson Styles -->
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <!--Navbar -->
+  <header>
+    <nav class="mb-1 navbar navbar-expand fixed-top fixed-top-1">
+      <section id="main-info-section" class="main-info-hidden-mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="main-info-item">
+                <a><i class="fa fa-file-text-o" aria-hidden="true"></i>Facturas electrónicas</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-paper-plane" aria-hidden="true"></i>Mis pedidos</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-map-marker" aria-hidden="true"></i>Conoce nuestras tiendas</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-phone-square" aria-hidden="true"></i>Llámanos (01) 555-5555</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-whatsapp" aria-hidden="true"></i></i>999 999 999</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Suscríbete a nuestro boletín</a>
+              </div>
+              <div class="main-info-item">
+                <a><i class="fa fa-envelope" aria-hidden="true"></i>servicioalcliente@bransonsport.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="nav-2">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item navbar-button">
+              <a class="nav-link waves-effect" data-toggle="modal" data-target="#menuModal"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item not-showing-xs">
+              <a class="nav-link waves-effect">Sport</a>
+            </li>
+            <li class="nav-item not-showing-xs">
+              <a class="nav-link waves-effect">Recovery</a>
+            </li>
+          </ul>
+          <div class="logo-box logo-desktop">
+            <a href="index.html"><img class="logo" src="src/images/logo_red.jpg" alt="branson_logo"></a>
+          </div>
+          <div id="wrap">
+            <form action="">
+              <input id="search" name="search" type="text">
+              <input id="search_submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+            </form>
+          </div>
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link waves-effect d-inline-block" data-toggle="modal" data-target="#modalLoginForm">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+              </a>
+              <a class="nav-link waves-effect d-inline-block">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </a>
+              <a class="nav-link waves-effect d-inline-block">
+                <span class="items-number">1</span>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--/Navbar -->
+  <section id="purchase-section">
+    <!-- Horizontal Steppers -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Stepers Wrapper -->
+          <ul class="stepper stepper-horizontal">
+            <!-- First Step -->
+            <li class="active">
+              <a href="compra1.html">
+                <span class="circle">1</span>
+                <span class="label">Carrito de compra</span>
+              </a>
+            </li>
+            <!-- Second Step -->
+            <li class="active">
+              <a href="compra2.html">
+                <span class="circle">2</span>
+                <span class="label">Ingresar email</span>
+              </a>
+            </li>
+            <!-- Third Step -->
+            <li class="active">
+              <a href="compra3.html">
+                <span class="circle">3</span>
+                <span class="label">Finalizar compra</span>
+              </a>
+            </li>
+          </ul>
+          <!-- /.Stepers Wrapper -->
+        </div>
+        <div class="col-xl-8 col-lg-8">
+          <!--Accordion wrapper-->
+          <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+          <!-- Accordion card -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingTwo1">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                  aria-expanded="false" aria-controls="collapseTwo1">
+                  <h5>Paso 1 - Datos personales</h5>
+                  <p>Información esencial para la finalización de la compra.</p>
+                </a>
+              </div>
+              <!-- Card body -->
+              <div id="collapseTwo1" class="collapse show" role="tabpanel" aria-labelledby="headingTwo1"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <input type="text" placeholder="micorreo@gmail.com" class="form-control input-information">
+                      <i class="fa fa-check check-validation" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <input type="text" placeholder="Nombre*" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <input type="text" placeholder="Apellido*" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <input type="text" placeholder="DNI*" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <input type="text" placeholder="Documento*" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <input type="text" placeholder="Teléfono / Móvil*" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="materialInline1" name="inlineMaterialRadiosExample">
+                        <label class="form-check-label" for="materialInline1">Boleta</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample">
+                        <label class="form-check-label" for="materialInline2">Factura</label>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="form-check products-check-form form-check-policy">
+                        <input type="checkbox" class="form-check-input" id="policy">
+                        <label class="form-check-label" for="policy">Acepto la <a href="#" class="policy">Política de uso de datos personales [*]</a></label>
+                      </div>
+                      <p>[*] Datos obligatorios</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <a>
+                        <button class="btn btn-primary btn-next">continuar</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- Accordion card -->
+          <!-- Accordion card -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingTwo2">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
+                  aria-expanded="false" aria-controls="collapseTwo21">
+                  <h5>Paso 2 - Dirección</h5>
+                  <p>El método de entrega se mostrará al completar tu dirección.</p>
+                </a>
+              </div>
+              <!-- Card body -->
+              <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <select class="mdb-select md-form" searchable="Buscar..">
+                      <option value="" disabled selected>Selecciona tu país</option>
+                      <option value="1">USA</option>
+                      <option value="2">Germany</option>
+                      <option value="3">France</option>
+                      <option value="3">Poland</option>
+                      <option value="3">Japan</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <select class="mdb-select md-form" searchable="Buscar..">
+                      <option value="" disabled selected>Selecciona tu distrito</option>
+                      <option value="1">Pueblo Libre</option>
+                      <option value="2">Miraflores</option>
+                      <option value="3">San Isidro</option>
+                      <option value="3">Lince</option>
+                      <option value="3">San Miguel</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-12">
+                      <input type="text" placeholder="Dirección" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6"></div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <a>
+                        <button class="btn btn-primary btn-next">continuar</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion card -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingTwo3">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo3"
+                  aria-expanded="false" aria-controls="collapseTwo3">
+                  <h5>Paso 3 - Método de entrega</h5>
+                  <p>Aún faltan llenar datos.</p>
+                </a>
+              </div>
+              <!-- Card body -->
+              <div id="collapseTwo3" class="collapse" role="tabpanel" aria-labelledby="headingTwo3"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <select class="mdb-select md-form" searchable="Buscar..">
+                      <option value="" disabled selected>Selecciona tu país</option>
+                      <option value="1">USA</option>
+                      <option value="2">Germany</option>
+                      <option value="3">France</option>
+                      <option value="3">Poland</option>
+                      <option value="3">Japan</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <select class="mdb-select md-form" searchable="Buscar..">
+                      <option value="" disabled selected>Selecciona tu distrito</option>
+                      <option value="1">Pueblo Libre</option>
+                      <option value="2">Miraflores</option>
+                      <option value="3">San Isidro</option>
+                      <option value="3">Lince</option>
+                      <option value="3">San Miguel</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-12">
+                      <input type="text" placeholder="Dirección" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6"></div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <a>
+                        <button class="btn btn-primary btn-next">continuar</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion card -->
+            <!-- Accordion card -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingTwo4">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo4"
+                  aria-expanded="false" aria-controls="collapseTwo4">
+                  <h5>Paso 4 - Método de pago</h5>
+                  <p>Aún faltan llenar datos.</p>
+                </a>
+              </div>
+              <!-- Card body -->
+              <div id="collapseTwo4" class="collapse" role="tabpanel" aria-labelledby="headingTwo4"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <p class="payment-p">Número de tarjeta</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <input type="text" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 payment-icons">
+                      <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                      <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                      <i class="fa fa-cc-amex" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <p class="payment-p">Número de cuotas</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <select class="mdb-select md-form">
+                      <option value="" selected>Total S/. 150.00</option>
+                      <option value="1">Total S/. 150.00</option>
+                      <option value="2">Total S/. 150.00</option>
+                      <option value="3">Total S/. 150.00</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <p class="payment-p">Nombre</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <input type="text" class="form-control input-information">
+                      <p>(Tal como figura en la tarjeta)</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <p class="payment-p">Fecha de vencimiento</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <input type="month" class="form-control input-information date-card">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <p class="payment-p">Código de seguridad</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                      <input type="text" class="form-control input-information">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 payment-icons">
+                      <i class="fa fa-credit-card fa-flip-horizontal card" aria-hidden="true"></i>
+                      <div class="circle-div"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion card -->
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12">
+          <div class="text-right">
+            <a class="link-return">Seguir comprando</a>
+          </div>
+          <div class="purchase-summary-box">
+            <h5>Resumen de tu compra</h5>
+            <div class="summary-card">
+              <img class="img-fluid" src="src/images/test-image.jpeg" alt="">
+              <span class="name">Nombre del producto</span>
+              <div class="quantity-box">
+                <span class="quantity">Cantidad: 1</span>
+                <span class="price">S/. 150.00</span>
+              </div>
+            </div>
+            <div class="detail-box">
+              <span class="left">Subtotal</span>
+              <span class="right">S/. 150.00</span>
+            </div>
+            <div class="detail-box">
+              <span class="left">Envío</span>
+              <span class="right">Por calcular</span>
+            </div>
+            <div class="detail-box">
+              <span class="left">Total</span>
+              <span class="right">S/. 150.00</span>
+            </div>
+            <div class="btn-box">
+              <a>
+                <button class="btn btn-primary btn-next">comprar ahora</button>
+              </a>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="footer-information">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <img src="src/images/logo_gra.jpg" alt="logo_bransonsport">
+            <p>Somos fabricantes y distribuidores de productos y accesorios de Medicina Deportiva con envíos diarios a todo el país. En nuestro catálogo, tenemos una enorme variedad de productos por los que se puede realizar un pedido a través de nuestra web y recibirlo en la comodidad de su casa.</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h2>Categoría</h2>
+            <a>Deluxe</a>
+            <a>Clásico</a>
+            <a>Pre operatorio</a>
+            <a>Premium</a>
+            <a>Terapéutica</a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h2>Asistencia</h2>
+            <a>Contacta con nosotros</a>
+            <a>Preguntas frecuentes</a>
+            <a>Guía de tallas</a>
+            <a>Envío y entrega</a>
+            <a>Seguimiento de su pedido</a>
+            <a>Métodos de Pago</a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h2>Medios de pago</h2>
+            <h2>Síguenos</h2>
+            <a class="social-icons"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a class="social-icons"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a class="social-icons"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="main-info-section" class="main-info-hidden-desktop">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main-info-item">
+              <a><i class="fa fa-file-text-o" aria-hidden="true"></i>Facturas electrónicas</a>
+            </div>
+            <div class="main-info-item">
+              <a><i class="fa fa-paper-plane" aria-hidden="true"></i>Mis pedidos</a>
+            </div>
+            <div class="main-info-item">
+              <a><i class="fa fa-map-marker" aria-hidden="true"></i>Conoce nuestras tiendas</a>
+            </div>
+            <div class="main-info-item">
+              <a><i class="fa fa-phone-square" aria-hidden="true"></i>Llámanos (01) 555-5555</a>
+            </div>
+            <div class="main-info-item">
+              <a><i class="fa fa-whatsapp" aria-hidden="true"></i></i>999 999 999</a>
+            </div>
+            <div class="main-info-item">
+              <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Suscríbete a nuestro boletín</a>
+            </div>
+            <div class="main-info-item">
+              <a><i class="fa fa-envelope" aria-hidden="true"></i>servicioalcliente@bransonsport.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <a>Política de privacidad</a>
+            <a>Términos y Condiciones</a>
+            <a>Mapa de sitio</a>
+            <a>© 2019 Bransonsport</a>
+          </div>
+          <div class="col-lg-4">
+            <a><i class="fa fa-address-book-o" aria-hidden="true"></i>Libro de reclamaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <!-- Login Modal -->
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-box">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Iniciar sesión</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="md-form">
+              <input type="email" id="defaultForm-email" class="form-control">
+              <label for="defaultForm-email">Ingresar email</label>
+            </div>
+            <div class="md-form">
+              <input type="password" id="defaultForm-pass" class="form-control">
+              <label for="defaultForm-pass">Ingresar su contraseña</label>
+            </div>
+            <a class="forgot-pw">¿Olvidaste tu contraseña?</a>
+            <div class="justify-content-center">
+              <a class="w-100"><button class="btn btn-primary btn-sign">Ingresar</button></a>
+            </div>
+          </div>
+          <div class="hr-box">
+            <hr class="hr1">
+            <hr class="hr2">
+            <div class="span-box">
+              <span>Iniciar sesión con</span>
+            </div>
+          </div>
+          <div class="social-box">
+            <div class="row">
+              <div class="col-6">
+                <a class="w-100"><button type="button" class="btn btn-primary"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</button></a>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-primary"><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google</button>
+              </div>
+            </div>
+          </div>
+          <div class="register-box">
+            <div class="text-center">
+              <span>¿No tiene una cuenta?</span>
+              <div class="d-flex justify-content-center">
+                <a class="w-100"><button class="btn btn-primary btn-register waves-effect">Registrarme</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side Modal Top Right -->
+<div class="modal fade left" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-side modal-top-left" role="document">
+    <div class="modal-content">
+      <div class="navbar-menu">
+        <div class="menu-box">
+          <i class="fa fa-times navbar-button x-button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></i>
+          <div class="menu-items">
+            <div class="menu-item">
+              <a class="item-hidden-dk">Sport</a>
+              <a class="item-hidden-dk">Recovery</a>
+            </div>
+            <div class="menu-item">
+              <a>Deluxe</a>
+              <a>Clásico</a>
+              <a>Pre operatorio</a>
+              <a>Pos operatorio</a>
+              <a>Premium</a>
+              <a>Terapéutica</a>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="contact-detail">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <span>999 999 999</span>
+            </div>
+            <div class="contact-detail">
+              <a><i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Nuestras tiendas</span></a>
+            </div>
+          </div>
+          <p>En cada una de nuestras categorías encontrarás productos y artículos con una descripción detallada para que tenga la mejor experiencia de compras y asquiera exactamente lo que está buscando.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Side Modal Top Right -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="src/mdbootstrap/js/jquery-3.4.1.min.js"></script>
+    <!-- Font Awesome fonts -->
+    <script src="https://use.fontawesome.com/d18e90b10d.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="src/mdbootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="src/mdbootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="src/mdbootstrap/js/mdb.min.js"></script>
+    <!-- Stepper JavaScript -->
+    <script type="text/javascript" src="src/mdbootstrap/js/addons-pro/stepper.js"></script>
+    <!-- Stepper JavaScript - minified -->
+    <script type="text/javascript" src="src/mdbootstrap/js/addons-pro/stepper.min.js"></script>
+    <!-- Branson JS -->
+    <script type="text/javascript" src="src/js/branson.js"></script>
+  </body>
+</html>
