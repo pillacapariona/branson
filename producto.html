@@ -51,11 +51,23 @@
             <li class="nav-item navbar-button">
               <a class="nav-link waves-effect" data-toggle="modal" data-target="#menuModal"><i class="fa fa-bars" aria-hidden="true"></i></a>
             </li>
-            <li class="nav-item not-showing-xs">
-              <a class="nav-link waves-effect">Sport</a>
+            <li class="nav-item dropdown not-showing-xs">
+              <a class="nav-link dropdown-toggle waves-effect" id ="sportDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sport</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="sportDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
-            <li class="nav-item not-showing-xs">
-              <a class="nav-link waves-effect">Recovery</a>
+            <li class="nav-item dropdown not-showing-xs">
+              <a class="nav-link dropdown-toggle waves-effect" id ="recoveryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recovery</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="recoveryDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
           </ul>
           <div class="logo-box logo-desktop">
@@ -75,9 +87,9 @@
               <a class="nav-link waves-effect d-inline-block">
                 <i class="fa fa-heart-o" aria-hidden="true"></i>
               </a>
-              <a class="nav-link waves-effect d-inline-block">
-                <span class="items-number">1</span>
+              <a href="producto.html" class="nav-link waves-effect d-inline-block">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span class="items-number">1</span>
               </a>
             </li>
           </ul>
@@ -103,18 +115,23 @@
           <span class="code-product">Código: Bra-137</span>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 gallery">
-          <!-- The grid: four columns -->
-          <div class="column">
-            <img class="img-fluid" src="src/images/test-image.jpeg" onclick="myFunction(this);">
-          </div>
-          <div class="column">
-            <img class="img-fluid" src="src/images/text-image2.jpeg" onclick="myFunction(this);">
-          </div>
-          <div class="column">
-            <img class="img-fluid" src="src/images/test-image3.jpeg" onclick="myFunction(this);">
-          </div>
-          <div class="big-image">
-            <img class="img-fluid" id="expandedImg">
+          <div class="row">
+            <div class="col-xl-2 col-lg-3">
+              <div class="column">
+                <img class="img-fluid" src="src/images/test-image.jpeg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img class="img-fluid" src="src/images/text-image2.jpeg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img class="img-fluid" src="src/images/test-image3.jpeg" onclick="myFunction(this);">
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-9">
+              <div class="big-image">
+                <img class="img-fluid" id="expandedImg">
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 product-detail-col">
@@ -131,7 +148,9 @@
             </div>
             <div class="btns">
               <button type="button" class="btn btn-primary btn-add"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Añadir a cesta</button>
-              <button type="button" class="btn btn-primary btn-purchase"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Comprar ahora</button>
+              <a href="compra1.html">
+                <button type="button" class="btn btn-primary btn-purchase"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Comprar ahora</button>
+              </a>
             </div>
           </div>
           <div class="size-color-box">
@@ -239,7 +258,7 @@
           <div class="image-box">
             <div class="content text-center">
               <div class="btns-box">
-                <a class="img-btn">
+                <a href="producto.html" class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
@@ -272,7 +291,7 @@
                 </a>
               </div>
               <div class="col-lg-6">
-                <a>
+                <a href="compra1.html">
                   <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                     Comprar ahora
@@ -286,7 +305,7 @@
           <div class="image-box">
             <div class="content text-center">
               <div class="btns-box">
-                <a class="img-btn">
+                <a href="producto.html" class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
@@ -319,7 +338,7 @@
                 </a>
               </div>
               <div class="col-lg-6">
-                <a>
+                <a href="compra1.html">
                   <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                     Comprar ahora
@@ -333,7 +352,7 @@
           <div class="image-box">
             <div class="content text-center">
               <div class="btns-box">
-                <a class="img-btn">
+                <a href="producto.html" class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
@@ -366,7 +385,7 @@
                 </a>
               </div>
               <div class="col-lg-6">
-                <a>
+                <a href="compra1.html">
                   <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                     Comprar ahora
@@ -380,7 +399,7 @@
           <div class="image-box">
             <div class="content text-center">
               <div class="btns-box">
-                <a class="img-btn">
+                <a href="producto.html" class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
@@ -413,7 +432,7 @@
                 </a>
               </div>
               <div class="col-lg-6">
-                <a>
+                <a href="compra1.html">
                   <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                     Comprar ahora
@@ -427,7 +446,7 @@
           <div class="image-box">
             <div class="content text-center">
               <div class="btns-box">
-                <a class="img-btn">
+                <a href="producto.html" class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
@@ -460,7 +479,7 @@
                 </a>
               </div>
               <div class="col-lg-6">
-                <a>
+                <a href="compra1.html">
                   <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                     Comprar ahora
@@ -474,7 +493,7 @@
           <div class="image-box">
             <div class="content text-center">
               <div class="btns-box">
-                <a class="img-btn">
+                <a href="producto.html" class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
@@ -507,7 +526,7 @@
                 </a>
               </div>
               <div class="col-lg-6">
-                <a>
+                <a href="compra1.html">
                   <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                     Comprar ahora
@@ -521,7 +540,7 @@
           <div class="image-box">
             <div class="content text-center">
               <div class="btns-box">
-                <a class="img-btn">
+                <a href="producto.html" class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
@@ -554,7 +573,7 @@
                 </a>
               </div>
               <div class="col-lg-6">
-                <a>
+                <a href="compra1.html">
                   <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                     Comprar ahora
@@ -568,7 +587,7 @@
           <div class="image-box">
             <div class="content text-center">
               <div class="btns-box">
-                <a class="img-btn">
+                <a href="producto.html" class="img-btn">
                   <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vista previa">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
@@ -601,7 +620,7 @@
                 </a>
               </div>
               <div class="col-lg-6">
-                <a>
+                <a href="compra1.html">
                   <button type="button" class="btn btn-primary purchase-btn-2 waves-effect">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                     Comprar ahora
@@ -826,9 +845,21 @@
         <div class="menu-box">
           <i class="fa fa-times navbar-button x-button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></i>
           <div class="menu-items">
-            <div class="menu-item">
-              <a class="item-hidden-dk">Sport</a>
-              <a class="item-hidden-dk">Recovery</a>
+            <div class="w-100 item-hidden-dk">
+              <div class="menu-item">
+                <h4>Sport</h4>
+                <a>Item 1</a>
+                <a>Item 2</a>
+                <a>Item 3</a>
+                <a>Item 4</a>
+              </div>
+              <div class="menu-item">
+                <h4>Recovery</h4>
+                <a>Item 1</a>
+                <a>Item 2</a>
+                <a>Item 3</a>
+                <a>Item 4</a>
+              </div>
             </div>
             <div class="menu-item">
               <a>Deluxe</a>
