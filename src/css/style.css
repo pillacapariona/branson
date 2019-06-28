@@ -1188,6 +1188,11 @@ input[type=date]:focus:not([readonly])+label, input[type=datetime-local]:focus:n
   padding: 10px;
 }
 
+#filter-products .btn-size-active {
+  background-color: #fff !important;
+  color: #000;
+}
+
 #filter-products .btn-color {
   border: 1px solid #cacaca;
   padding: 10px;
@@ -1999,6 +2004,9 @@ input[type=range]::-ms-thumb {
   .breadcrumb {
     padding-top: 210px;
   }
+  .nav-purchase {
+    top: 21px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2033,7 +2041,7 @@ input[type=range]::-ms-thumb {
   }
 
   #product-detail-section .gallery .column img {
-    height: 70px; 
+    height: 70px;
   }
 
   #offer-section {
@@ -2140,8 +2148,16 @@ input[type=range]::-ms-thumb {
     top: 0;
     padding: 0 10px;
   }
+  .nav-purchase {
+    top: 0 !important;
+  }
   .nav-2 .logo {
     display: none;
+  }
+  .nav-purchase .logo-box .logo {
+    display: block;
+    height: 50px;
+    width: 126px;
   }
   .nav-2 .nav-item a {
     font-size: 1rem;
@@ -2187,6 +2203,18 @@ input[type=range]::-ms-thumb {
   }
   #purchase-section .accordion .card-body .check-validation {
     right: 8%;
+  }
+  .nav-purchase .nav-item {
+    font-size: 0.9rem !important;
+    padding: 5px 1px 5px 5px !important;
+  }
+  .nav-purchase .nav-item i {
+    font-size: 1.3rem !important;
+    top: 2px !important;
+  }
+  .nav-purchase ul.navbar-nav {
+    flex-direction: column;
+    padding: 10px;
   }
 }
 
@@ -2256,4 +2284,57 @@ input[type=range]::-ms-thumb {
 
 .irs--round .irs-handle.state_hover, .irs--round .irs-handle:hover {
   background-color: #E6001D;
+}
+
+@media (max-width: 47.9375rem) {
+.stepper-horizontal {
+    flex-direction: unset;
+  }
+  ul.stepper {
+    overflow-y: hidden;
+    position: relative;
+    right: 10vw;
+  }
+  ul.stepper li a {
+    padding: 0.8rem;
+  }
+  .stepper-horizontal li:not(:last-child):after {
+    display: none;
+  }
+  .stepper-horizontal li {
+    -webkit-align-items: center;
+    flex-direction: unset;
+  }
+  #purchase-section .stepper .label {
+    display: none;
+  }
+  .stepper-horizontal li:not(:first-child):before, .stepper-horizontal li:not(:last-child):after {
+    margin: .5rem -0 0;
+    right: 0rem;
+  }
+  ul.stepper li:first-child a {
+    margin: 0 0 0 22vw;
+  }
+}
+
+.nav-purchase {
+  top: 21px;
+}
+
+.nav-purchase .logo-box {
+  text-align: left;
+}
+
+.nav-purchase .nav-item {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding: 2rem;
+}
+
+.nav-purchase .nav-item i {
+  font-size: 2rem;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
 }
